@@ -108,10 +108,13 @@
   .footer {
     padding: 30px 20px;
     gap: 20px;
+    text-align: center;
   }
 
   .logo img {
     width: 120px;
+    margin: auto;
+   
   }
 
   .links li {
@@ -121,7 +124,6 @@
 
   .icons {
     font-size: 18px;
+    margin: auto;
   }
 }
-
-
