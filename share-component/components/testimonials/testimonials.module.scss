@@ -86,26 +86,30 @@ justify-content: center;
 }
 
 .testimonialSwiper {
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 
   :global(.swiper-button-prev),
   :global(.swiper-button-next) {
     top: auto;
     bottom: 0;
+    left: 50%;
+    right: auto;
     color: #000;
   }
 
   :global(.swiper-button-prev) {
-    left: 45%;
+    transform: translateX(-60px);
   }
 
   :global(.swiper-button-next) {
-    right: 45%;
+    transform: translateX(60px); 
   }
 
   :global(.swiper-button-prev::after),
   :global(.swiper-button-next::after) {
-    font-size: 18px; 
-    font-weight: bold;
+    font-size: 14px;
   }
 }
+
+
+ 
