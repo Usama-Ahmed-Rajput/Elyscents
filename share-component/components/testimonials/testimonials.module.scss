@@ -55,6 +55,7 @@ font-size: 20px;
     width: 90%;
     font-size: 25px;
     padding: 10px;
+    text-align: center;
 }
 
 .review_stars{
@@ -82,4 +83,29 @@ justify-content: center;
     margin: auto;
     text-decoration: underline;
     padding: 15px;
+}
+
+.testimonialSwiper {
+  padding-bottom: 60px; 
+
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    top: auto;
+    bottom: 0;
+    color: #000;
+  }
+
+  :global(.swiper-button-prev) {
+    left: 45%;
+  }
+
+  :global(.swiper-button-next) {
+    right: 45%;
+  }
+
+  :global(.swiper-button-prev::after),
+  :global(.swiper-button-next::after) {
+    font-size: 18px; 
+    font-weight: bold;
+  }
 }
