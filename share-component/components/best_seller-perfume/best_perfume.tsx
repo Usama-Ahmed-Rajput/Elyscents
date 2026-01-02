@@ -105,7 +105,7 @@ const Best_perfume = () => {
 
     return (
         <>
-           
+
             <div className={style.wrapper}>
                 <h2 className={style.heading}>BEST SELLERS PERFUMES</h2>
             </div>
