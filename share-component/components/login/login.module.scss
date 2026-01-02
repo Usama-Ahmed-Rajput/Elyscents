@@ -1,0 +1,100 @@
+html,
+body {
+    background-color: rgb(250, 250, 250);
+}
+
+.container {
+    padding: 30px;
+}
+
+.box {
+    border: 1px solid;
+    width: 100px;
+    width: 34%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 160px;
+    height: 69px;
+    margin: auto;
+    padding: 20px;
+}
+
+.signin {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.description {
+    color: gray;
+}
+
+.signin_btn {
+    background-color: rgb(84, 51, 235);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    button{
+        cursor: pointer;
+    }
+}
+
+.signin_btn:hover {
+    background-color: rgb(69, 36, 219);
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.divider {
+    border-bottom: 1px solid gray;
+    width: 50%;
+
+}
+
+.or {
+    color: gray;
+}
+
+.email input {
+    border: 1px solid gray;
+    padding: 13px;
+    width: 100%;
+    border-radius: 10px;
+    color: black;
+}
+
+.email input::placeholder {
+    color: gray;
+}
+
+.cnt_btn button{
+    background-color: rgb(250, 250, 250);
+    color: gray;
+    font-weight: bold;
+     border: 1px solid gray;
+    padding: 13px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+

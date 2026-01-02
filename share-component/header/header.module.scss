@@ -1,0 +1,146 @@
+.top_caption {
+  text-transform: uppercase;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.top_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.left_icons,
+.right_icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.logo {
+  width: 160px;
+  height: 69px;
+}
+
+.desktop_search_icon,
+.person_icon,
+.desktop_bag_icon,
+.mobile_search_icon,
+.mobile_bag_icon,
+.hamburger_icon {
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+}
+
+.hamburger_icon {
+  display: none;
+  cursor: pointer;
+}
+
+.desktop_search_icon { display: block; }
+.person_icon { display: block; }
+.desktop_bag_icon { display: block; }
+.mobile_search_icon, .mobile_bag_icon { display: none; }
+
+.link_pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.link_pages > li:hover{
+  text-decoration: 2px underline;
+}
+
+.desktop_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.border{
+  padding: 10px 0 0 15px;
+  border-bottom: 1px solid rgb(208, 208, 208);
+  line-height: 2.5;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+  .desktop_search_icon { display: block; }
+  .person_icon { display: block; }
+  .desktop_bag_icon { display: block; }
+  .hamburger_icon { display: none; }
+  .mobile_search_icon, .mobile_bag_icon { display: none; }
+
+  .top_line { gap: 12px; }
+  .logo { width: 150px; }
+}
+
+
+@media (max-width: 768px) {
+  .desktop_nav,
+  .desktop_search_icon,
+  .person_icon,
+  .desktop_bag_icon {
+    display: none;
+  }
+
+  .hamburger_icon { display: block; }
+  .mobile_search_icon,
+  .mobile_bag_icon { display: block; }
+
+  .top_line { gap: 10px; }
+  .left_icons, .right_icons { gap: 10px; }
+  .logo { width: 140px; }
+}
+
+
+@media (max-width: 480px) {
+  .top_line { gap: 8px; }
+  .logo { width: 120px; }
+  .left_icons, .right_icons { gap: 8px; }
+  .link_pages { gap: 15px; font-size: 16px; }
+}
+
+
+
+

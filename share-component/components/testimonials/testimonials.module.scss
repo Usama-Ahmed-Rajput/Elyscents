@@ -1,0 +1,85 @@
+.wrapper {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 35px 0 0 0;
+  color: black;
+}
+.main_star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 40px;
+}
+.stars{
+    color: black;
+    font-size: 30px;    
+}
+
+.rating{
+    color: black;
+    font-size: 20px;
+}
+.sm_star{
+color: black;
+font-size: 20px;
+}
+
+.testimonials{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid #108474;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quotes{
+    color: #108474;
+    font-size: 60px;
+    padding: 15px;
+    margin: auto;
+}
+
+.review{
+    color: black;
+    margin: auto;
+    width: 90%;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.review_stars{
+display: flex;
+justify-content: center;
+}
+
+.stars2{
+    color: #108474;
+    font-size: 30px
+   
+}
+
+.name{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    padding: 20px;
+}
+
+.perfume_name{
+    color: black;
+    font-size: 20px;
+    margin: auto;
+    text-decoration: underline;
+    padding: 15px;
+}

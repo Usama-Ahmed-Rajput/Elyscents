@@ -1,0 +1,93 @@
+.main_heading {
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+
+.address {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 50px;
+}
+
+.sub_heading {
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact {
+    width: 100%;
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 12px;
+        letter-spacing: 3px;
+        color: #000;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid #e5e5e5;
+        padding: 14px;
+        font-size: 14px;
+        color: black;
+        outline: none;
+    }
+
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 14px 40px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.hCaptcha{
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}

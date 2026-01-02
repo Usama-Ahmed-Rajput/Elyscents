@@ -1,0 +1,127 @@
+.footer {
+  background-color: #e8e8e1;
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.3fr 1.6fr;
+  gap: 50px;
+  color: #000;
+  font-size: 14px;
+}
+
+.logo img {
+  width: 160px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+
+  li {
+    cursor: pointer;
+    line-height: 2.4;
+    transition: 0.3s;
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sign {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.email {
+  background: transparent;
+  border-bottom: 2px solid #000;
+  padding: 8px 0;
+  outline: none;
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.talk_to_us {
+  line-height: 2;
+}
+
+.talk_us {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.chat_us {
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+@media (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 40px;
+    gap: 40px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .icons {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .icons {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .links li {
+    line-height: 2;
+    font-size: 16px;
+  }
+
+  .icons {
+    font-size: 18px;
+  }
+}
+
+

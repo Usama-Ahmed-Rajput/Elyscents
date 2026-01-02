@@ -1,0 +1,109 @@
+.wrapper {
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 35px 0;
+  color: black;
+}
+
+.perfumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1320px;
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 0 10px; 
+  box-sizing: border-box;
+}
+
+.perfume_item {
+  width: 22%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.perfume_item img {
+  width: 100%;
+}
+
+.deal_names {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+.cut_price {
+  text-decoration: line-through;
+  color: black;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.real_price {
+  font-weight: bold;
+  color: black;
+}
+
+.save_price {
+  color: red;
+  font-size: 14px;
+}
+
+.cart_btn {
+  background: black;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart_btn button {
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.view_all_btn {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+}
+
+.view_all_btn button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media(max-width:1024px) {
+  .perfume_item {
+    width: 30%;
+  }
+}
+
+@media(max-width:768px) {
+  .perfume_item {
+    width: 45%;
+  }
+}
+
+@media(max-width:480px) {
+  .perfume_item {
+    width: 100%;
+  }
+}

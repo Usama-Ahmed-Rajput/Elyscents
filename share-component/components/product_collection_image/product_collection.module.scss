@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  border-top: solid;
+}
+
+.heading {
+  text-align: center;
+  font-size: 27px;
+  font-weight: bold;
+  padding: 35px 0;
+  color: black;
+}
+
+.collection_images {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.images:hover {
+  transform: scale(1.1);
+
+}
