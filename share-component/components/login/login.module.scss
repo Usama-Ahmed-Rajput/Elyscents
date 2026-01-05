@@ -96,6 +96,11 @@ body {
     cursor: pointer;
 }
 
+.cnt_btn button:hover{
+    background-color: black;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .box {
         width: 70%;
