@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { BsBag } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { FaInstagram, FaFacebook, FaYoutube, FaTiktok } from "react-icons/fa";
 import { Drawer } from "@mui/material";
 import Link from "next/link";
 import style from './header.module.scss'
@@ -11,8 +12,8 @@ import style from './header.module.scss'
 const Header = () => {
   const [open, setOpen] = useState(false);
   const toggleDrawer = (value: boolean): void => {
-  setOpen(value);
-};
+    setOpen(value);
+  };
 
 
 
@@ -30,11 +31,11 @@ const Header = () => {
                 <CiSearch />
               </div>
               <div
-  className={style.hamburger_icon}
-  onClick={() => toggleDrawer(true)}
->
-  <RxHamburgerMenu />
-</div>
+                className={style.hamburger_icon}
+                onClick={() => toggleDrawer(true)}
+              >
+                <RxHamburgerMenu />
+              </div>
 
             </div>
 
@@ -85,22 +86,31 @@ const Header = () => {
       </nav>
 
       <Drawer
-  anchor="left"
-  open={open}
-  onClose={() => toggleDrawer(false)}
->
-  <div style={{ width: 250 }}>
-    <ul className={style.modify}>
-      <li className={style.border}><Link href="/">Home</Link></li>
-      <li className={style.border}><Link href="/perfume">All Perfumes</Link></li>
-      <li className={style.border}><Link href="/crazy_deals">Crazy Deals</Link></li>
-      <li className={style.border}><Link href="/about_us">About Us</Link></li>
-      <li className={style.border}><Link href="/contact_us">Contact Us</Link></li>
-      <li className={style.border}><Link href="/login">Login</Link></li>
-    </ul>
-  </div>
+        anchor="left"
+        open={open}
+        onClose={() => toggleDrawer(false)}
+      >
+        <div style={{ width: 250 }}>
+          <ul className={style.modify}>
+            <li className={style.border}><Link href="/">Home</Link></li>
+            <li className={style.border}><Link href="/perfume">All Perfumes</Link></li>
+            <li className={style.border}><Link href="/crazy_deals">Crazy Deals</Link></li>
+            <li className={style.border}><Link href="/about_us">About Us</Link></li>
+            <li className={style.border}><Link href="/contact_us">Contact Us</Link></li>
+            <li className={style.border1}><Link href="/login">Login</Link></li>
+          </ul>
+        </div>
 
-</Drawer>
+        <div>
+          <ul className={style.main_icons}>
+             <li className={style.icons}><FaInstagram /></li>
+            <li className={style.icons}><FaFacebook /></li>
+            <li className={style.icons}><FaYoutube /></li>
+            <li className={style.icons}><FaTiktok /></li>
+          </ul>
+        </div>
+
+      </Drawer>
 
     </>
   )

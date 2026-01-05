@@ -63,10 +63,22 @@
   cursor: pointer;
 }
 
-.desktop_search_icon { display: block; }
-.person_icon { display: block; }
-.desktop_bag_icon { display: block; }
-.mobile_search_icon, .mobile_bag_icon { display: none; }
+.desktop_search_icon {
+  display: block;
+}
+
+.person_icon {
+  display: block;
+}
+
+.desktop_bag_icon {
+  display: block;
+}
+
+.mobile_search_icon,
+.mobile_bag_icon {
+  display: none;
+}
 
 .link_pages {
   display: flex;
@@ -81,7 +93,7 @@
   margin: 10px 0 0 0;
 }
 
-.link_pages > li:hover{
+.link_pages>li:hover {
   text-decoration: 2px underline;
 }
 
@@ -93,11 +105,36 @@
 }
 
 
+.modify{
+  text-transform: uppercase;
+  word-spacing: 2;
+  margin-top: 40px;
+}
 
-.border{
+
+.border {
   padding: 10px 0 0 15px;
   border-bottom: 1px solid rgb(208, 208, 208);
   line-height: 2.5;
+}
+
+.border1 {
+  padding: 10px 0 0 15px;
+  line-height: 2.5;
+}
+
+.main_icons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  width: 250px;
+  margin-left: 10px;
+
+  .icons {
+    font-size: 20px;
+    border: 1px solid rgb(208, 208, 208);
+    padding: 20px 30px;
+  }
 }
 
 
@@ -105,18 +142,39 @@
 
 
 @media (max-width: 1024px) {
-  .desktop_search_icon { display: block; }
-  .person_icon { display: block; }
-  .desktop_bag_icon { display: block; }
-  .hamburger_icon { display: none; }
-  .mobile_search_icon, .mobile_bag_icon { display: none; }
+  .desktop_search_icon {
+    display: block;
+  }
 
-  .top_line { gap: 12px; }
-  .logo { width: 150px; }
+  .person_icon {
+    display: block;
+  }
+
+  .desktop_bag_icon {
+    display: block;
+  }
+
+  .hamburger_icon {
+    display: none;
+  }
+
+  .mobile_search_icon,
+  .mobile_bag_icon {
+    display: none;
+  }
+
+  .top_line {
+    gap: 12px;
+  }
+
+  .logo {
+    width: 150px;
+  }
 }
 
 
 @media (max-width: 768px) {
+
   .desktop_nav,
   .desktop_search_icon,
   .person_icon,
@@ -124,23 +182,46 @@
     display: none;
   }
 
-  .hamburger_icon { display: block; }
-  .mobile_search_icon,
-  .mobile_bag_icon { display: block; }
+  .hamburger_icon {
+    display: block;
+  }
 
-  .top_line { gap: 10px; }
-  .left_icons, .right_icons { gap: 10px; }
-  .logo { width: 140px; }
+  .mobile_search_icon,
+  .mobile_bag_icon {
+    display: block;
+  }
+
+  .top_line {
+    gap: 10px;
+  }
+
+  .left_icons,
+  .right_icons {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 140px;
+  }
 }
 
 
 @media (max-width: 480px) {
-  .top_line { gap: 8px; }
-  .logo { width: 120px; }
-  .left_icons, .right_icons { gap: 8px; }
-  .link_pages { gap: 15px; font-size: 16px; }
+  .top_line {
+    gap: 8px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .left_icons,
+  .right_icons {
+    gap: 8px;
+  }
+
+  .link_pages {
+    gap: 15px;
+    font-size: 16px;
+  }
 }
-
-
-
-
