@@ -43,7 +43,8 @@ body {
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
-    button{
+
+    button {
         cursor: pointer;
     }
 }
@@ -82,11 +83,11 @@ body {
     color: gray;
 }
 
-.cnt_btn button{
+.cnt_btn button {
     background-color: rgb(250, 250, 250);
     color: gray;
     font-weight: bold;
-     border: 1px solid gray;
+    border: 1px solid gray;
     padding: 13px;
     width: 100%;
     border-radius: 10px;
@@ -95,6 +96,45 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .box {
+        width: 70%;
+        padding: 20px;
+    }
 
+    .logo {
+        width: 140px;
+        height: auto;
+    }
+}
 
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
 
+    .box {
+        width: 100%;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .signin {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .signin_btn,
+    .cnt_btn button {
+        padding: 14px;
+        font-size: 14px;
+    }
+}

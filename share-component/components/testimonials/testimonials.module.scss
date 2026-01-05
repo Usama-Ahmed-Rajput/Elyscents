@@ -85,31 +85,31 @@ justify-content: center;
     padding: 15px;
 }
 
-.testimonialSwiper {
-  padding-bottom: 60px;
+// .testimonialSwiper {
+//   padding-bottom: 60px;
 
-  :global(.swiper-button-prev),
-  :global(.swiper-button-next) {
-    top: auto;
-    bottom: 0;
-    left: 50%;
-    right: auto;
-    color: #000;
-  }
+//   :global(.swiper-button-prev),
+//   :global(.swiper-button-next) {
+//     top: auto;
+//     bottom: 0;
+//     left: 50%;
+//     right: auto;
+//     color: #000;
+//   }
 
-  :global(.swiper-button-prev) {
-    transform: translateX(-60px);
-  }
+//   :global(.swiper-button-prev) {
+//     transform: translateX(-60px);
+//   }
 
-  :global(.swiper-button-next) {
-    transform: translateX(60px); 
-  }
+//   :global(.swiper-button-next) {
+//     transform: translateX(60px); 
+//   }
 
-  :global(.swiper-button-prev::after),
-  :global(.swiper-button-next::after) {
-    font-size: 14px;
-  }
-}
+//   :global(.swiper-button-prev::after),
+//   :global(.swiper-button-next::after) {
+//     font-size: 14px;
+//   }
+// }
 
 
  
