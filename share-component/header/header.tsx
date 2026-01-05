@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { CiSearch } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { BsBag } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaInstagram, FaFacebook, FaYoutube, FaTiktok } from "react-icons/fa";
 import { Drawer } from "@mui/material";
@@ -13,6 +14,12 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const toggleDrawer = (value: boolean): void => {
     setOpen(value);
+  };
+
+  const [cartOpen, setCartOpen] = useState(false);
+
+  const toggleCartDrawer = (value: boolean): void => {
+    setCartOpen(value);
   };
 
 
@@ -51,13 +58,19 @@ const Header = () => {
               <div className={style.person_icon}>
                 <Link href="/login"><IoPersonOutline /></Link>
               </div>
-              <div className={style.desktop_bag_icon}>
+              <div
+                className={style.desktop_bag_icon}
+                onClick={() => toggleCartDrawer(true)}
+              >
                 <BsBag />
               </div>
               <div className={style.mobile_search_icon}>
                 <CiSearch />
               </div>
-              <div className={style.mobile_bag_icon}>
+              <div
+                className={style.mobile_bag_icon}
+                onClick={() => toggleCartDrawer(true)}
+              >
                 <BsBag />
               </div>
             </div>
@@ -103,7 +116,7 @@ const Header = () => {
 
         <div>
           <ul className={style.main_icons}>
-             <li className={style.icons}><FaInstagram /></li>
+            <li className={style.icons}><FaInstagram /></li>
             <li className={style.icons}><FaFacebook /></li>
             <li className={style.icons}><FaYoutube /></li>
             <li className={style.icons}><FaTiktok /></li>
@@ -111,6 +124,25 @@ const Header = () => {
         </div>
 
       </Drawer>
+
+
+      <Drawer
+        anchor="right"
+        open={cartOpen}
+        onClose={() => toggleCartDrawer(false)}
+      >
+        <div className={style.cart_drawer}>
+          <IoClose
+            className={style.close_icon}
+            onClick={() => toggleCartDrawer(false)}
+          />
+          <h2 className={style.cart_heading}> Cart</h2>
+
+          <p className={style.cart_text}>Your cart is currently empty.</p>
+
+        </div>
+      </Drawer>
+
 
     </>
   )

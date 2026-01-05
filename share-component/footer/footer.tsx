@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { GrInstagram } from 'react-icons/gr'
 import { FaFacebook, FaYoutube, FaTiktok } from 'react-icons/fa'
+import Link from 'next/link'
 import styles from './footer.module.scss'
 
 const Footer: FC = () => {
@@ -18,8 +19,8 @@ const Footer: FC = () => {
         <li>Return & Exchange Policy</li>
         <li>Track Order</li>
         <li>Search</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li><Link href="/about_us">About Us</Link></li>
+        <li><Link href="/contact_us">Contact Us</Link></li>
         <li>Blog</li>
         <li>Refund Policy</li>
         <li>Terms of Service</li>

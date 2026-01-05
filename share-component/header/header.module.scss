@@ -138,6 +138,34 @@
 }
 
 
+.cart_drawer {
+  width: 320px;
+  padding: 20px;
+   position: relative;
+}
+
+.close_icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+ .cart_heading{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(118, 115, 115);
+    margin-top: 20px;
+  }
+
+.cart_text{
+  margin-top: 10px;
+}
+
+
+
 
 
 
