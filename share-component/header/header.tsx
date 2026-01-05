@@ -106,9 +106,9 @@ const Header = () => {
         <div style={{ width: 250 }}>
           <ul className={style.modify}>
             <IoClose
-            className={style.close_icon}
-            onClick={() => toggleDrawer(false)}
-          />
+              className={style.close_icon}
+              onClick={() => toggleDrawer(false)}
+            />
             <li className={style.border}><Link href="/">Home</Link></li>
             <li className={style.border}><Link href="/perfume">All Perfumes</Link></li>
             <li className={style.border}><Link href="/crazy_deals">Crazy Deals</Link></li>
