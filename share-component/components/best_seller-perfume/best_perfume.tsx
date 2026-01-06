@@ -3,21 +3,24 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import style from './best_perfume.module.scss'
+
+type IProductsType = {
+    name: string,
+    cut_price: number,
+    real_price: number,
+    src: string,
+    src1: string
+}
+
+
 const Best_perfume = () => {
     const [hoverIndex, setHoverIndex] = useState<any>(null);
     const [isMobile, setIsMobile] = useState(false)
+    const [product, setProduct] = useState<IProductsType[]>([])
 
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768)
-        }
 
-        handleResize()
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-    let products = [
-        {
+        setProduct([{
             name: 'Royal Oud',
             cut_price: 2000,
             real_price: 1799,
@@ -74,7 +77,19 @@ const Best_perfume = () => {
             src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Green-Elixir.jpg?v=1760523069&width=540"
         }
 
-    ];
+        ]);
+    }, [])
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
     const CartItem = (value: any, index: number) => (
         <div className={style.perfume_item} key={index}>
             <img
@@ -112,7 +127,7 @@ const Best_perfume = () => {
 
             {!isMobile && (
                 <div className={style.perfumes}>
-                    {products.map((value, index) =>
+                    {product.map((value: IProductsType, index: number) =>
                         CartItem(value, index)
                     )}
                 </div>
@@ -120,7 +135,7 @@ const Best_perfume = () => {
 
             {isMobile && (
                 <Swiper slidesPerView={1.2} spaceBetween={15}>
-                    {products.map((value, index) => (
+                    {product.map((value, index) => (
                         <SwiperSlide key={index}>
                             {CartItem(value, index)}
                         </SwiperSlide>

@@ -3,20 +3,23 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import style from './oud_collection.module.scss'
+
+type IProductsType = {
+    name : string,
+    cut_price : number,
+    real_price : number,
+    src : string,
+    src1 : string,
+}
+
 const Oud_collection = () => {
     const [hoverIndex, setHoverIndex] = useState<any>(null)
     const [isMobile, setIsMobile] = useState(false)
+    const [product, setProduct] = useState<IProductsType[]>([])
 
-     useEffect(() => {
-            const handleResize = () => {
-                setIsMobile(window.innerWidth <= 768)
-            }
-    
-            handleResize()
-            window.addEventListener('resize', handleResize)
-            return () => window.removeEventListener('resize', handleResize)
-        }, [])
-    let products = [
+
+    useEffect(()=>{
+        setProduct ([
         {
             name: 'Oud Majesty',
             cut_price: 2000,
@@ -73,7 +76,19 @@ const Oud_collection = () => {
             src: "https://elyscents.pk/cdn/shop/files/Crystal_Oud.jpg?v=1760523084&width=1080",
             src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Crystal-Oud.jpg?v=1760523084&width=540"
         }
-    ];
+    ]);
+    },[])
+
+     useEffect(() => {
+            const handleResize = () => {
+                setIsMobile(window.innerWidth <= 768)
+            }
+    
+            handleResize()
+            window.addEventListener('resize', handleResize)
+            return () => window.removeEventListener('resize', handleResize)
+        }, [])
+    
     const CartItem = (value: any, index: number) => (
         <div className={style.perfume_item} key={index}>
             <img
@@ -109,7 +124,7 @@ const Oud_collection = () => {
             
             {!isMobile && (
                 <div className={style.perfumes}>
-                    {products.map((value, index) =>
+                    {product.map((value:IProductsType, index:number) =>
                         CartItem(value, index)
                     )}
                 </div>
@@ -117,7 +132,7 @@ const Oud_collection = () => {
 
             {isMobile && (
                 <Swiper slidesPerView={1.2} spaceBetween={15}>
-                    {products.map((value, index) => (
+                    {product.map((value:IProductsType, index:number) => (
                         <SwiperSlide key={index}>
                             {CartItem(value, index)}
                         </SwiperSlide>

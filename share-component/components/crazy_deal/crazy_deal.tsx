@@ -4,20 +4,23 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import style from "./crazy_deal.module.scss";
 
+type IProductsType = {
+  name : string,
+  cut_price : number,
+  real_price : number,
+  src : string,
+  src1 : string
+}
+
 const Crazy_deal = () => {
   const [hoverIndex, setHoverIndex] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false)
+  const [product, setProduct] = useState<IProductsType[]>([])
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768)
-    }
 
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-  let products = [
+  useEffect(()=>{
+    
+    setProduct ([
     {
       name: "6x Mega Deal",
       cut_price: 11400,
@@ -74,7 +77,19 @@ const Crazy_deal = () => {
       src: "https://elyscents.pk/cdn/shop/files/testerbox1_1800x1800.jpg?v=1760517576",
       src1: "https://elyscents.pk/cdn/shop/files/testerbox2.jpg?v=1760517577&width=540"
     }
-  ];
+  ]);
+  },[])
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+ 
   const CartItem = (value: any, index: number) => (
     <div className={style.perfume_item} key={index}>
       <img
@@ -110,7 +125,7 @@ const Crazy_deal = () => {
 
       {!isMobile && (
         <div className={style.perfumes}>
-          {products.map((value, index) =>
+          {product.map((value:IProductsType, index:number) =>
             CartItem(value, index)
           )}
         </div>
@@ -118,7 +133,7 @@ const Crazy_deal = () => {
 
       {isMobile && (
         <Swiper slidesPerView={1.2} spaceBetween={15}>
-          {products.map((value, index) => (
+          {product.map((value:IProductsType, index:number) => (
             <SwiperSlide key={index}>
               {CartItem(value, index)}
             </SwiperSlide>

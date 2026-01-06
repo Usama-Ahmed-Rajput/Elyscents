@@ -3,20 +3,26 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import style from './perfume_for_him.module.scss'
+
+type IProductsType = {
+    name : string,
+    cut_price :number,
+    real_price :number,
+    src : string,
+    src1 : string
+}
+
+
+
 const Perfume_for_him = () => {
     const [hoverIndex, setHoverIndex] = useState<any>(null)
     const [isMobile, setIsMobile] = useState(false)
+    const [product, setProduct] = useState<IProductsType[]>([])
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768)
-        }
 
-        handleResize()
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-    let products = [
+useEffect(()=>{
+
+    setProduct ([
         {
             name: "Dream",
             cut_price: 2000,
@@ -72,7 +78,21 @@ const Perfume_for_him = () => {
             src: "https://elyscents.pk/cdn/shop/files/Peak_Breeze_ebff756b-2f75-4d81-bb82-fb443abad2ea.jpg?v=1760523055&width=1080",
             src1: "https://elyscents.pk/cdn/shop/files/ELyscents-Peak-Breeze.jpg?v=1760523055&width=540"
         }
-    ];
+    ]);
+},[])
+    
+    
+    
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+
+        handleResize()
+        window.addEventListener('resize', handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+    
     const CartItem = (value: any, index: number) => (
         <div className={style.perfume_item} key={index}>
             <img
@@ -108,7 +128,7 @@ const Perfume_for_him = () => {
 
             {!isMobile && (
                 <div className={style.perfumes}>
-                    {products.map((value, index) =>
+                    {product.map((value:IProductsType, index:number) =>
                         CartItem(value, index)
                     )}
                 </div>
@@ -116,7 +136,7 @@ const Perfume_for_him = () => {
 
             {isMobile && (
                 <Swiper slidesPerView={1.2} spaceBetween={15}>
-                    {products.map((value, index) => (
+                    {product.map((value:IProductsType, index:number) => (
                         <SwiperSlide key={index}>
                             {CartItem(value, index)}
                         </SwiperSlide>
