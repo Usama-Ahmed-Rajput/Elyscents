@@ -98,11 +98,13 @@
 @media(max-width:768px) {
   .perfume_item {
     width: 45%;
+    margin-left: 15px;
   }
 }
 
 @media(max-width:480px) {
   .perfume_item {
     width: 100%;
+    margin-left: 15px;
   }
 }

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import style from './perfume_for_her.module.scss'
+import Link from 'next/link'
 
 type IProductsType = {
     name: string,
@@ -141,7 +142,7 @@ return (
             </Swiper>
         )}
 
-        <div className={style.view_all_btn}><button>VIEW ALL</button></div>
+        <div className={style.view_all_btn}><Link href="/perfume_for_her"><button>VIEW ALL</button></Link></div>
 
     </>
 )

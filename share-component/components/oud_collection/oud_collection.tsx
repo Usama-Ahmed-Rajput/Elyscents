@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import style from './oud_collection.module.scss'
+import Link from 'next/link'
 
 type IProductsType = {
     name : string,
@@ -140,7 +141,7 @@ const Oud_collection = () => {
                 </Swiper>
             )}
 
-            <div className={style.view_all_btn}><button>VIEW ALL</button></div>
+            <div className={style.view_all_btn}><Link href="/oud_collection"><button>VIEW ALL</button></Link></div>
 
 
         </>
