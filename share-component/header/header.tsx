@@ -47,11 +47,11 @@ const Header = () => {
             </div>
 
             <div className={style.logo_container}>
-              <img
+              <Link href="/"><img
                 src="https://elyscents.pk/cdn/shop/files/logo_size.png?v=1703577106&width=320"
                 alt="Elyscents Logo"
                 className={style.logo}
-              />
+              /></Link>
             </div>
 
             <div className={style.right_icons}>
