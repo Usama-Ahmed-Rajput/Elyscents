@@ -117,12 +117,28 @@ const Crazy_comp = () => {
         <button>Add to Cart</button>
       </div>
     </div>
+
+    
   )
 
   return (
     <>
     <div className={style.top_image}>
       <img src="https://elyscents.pk/cdn/shop/files/elyscents-banner.jpg?v=1716647770" alt="" />
+    </div>
+
+    <div className={style.filter_product}>
+      <p>8 Products</p>
+      <div>
+        <select>
+          <option>Featured</option>
+          <option>Alphabetically, A-Z</option>
+          <option>Alphabetically, Z-A</option>
+          <option>Price, Low to High</option>
+          <option>Price, High to Low</option>
+        </select>
+      </div>
+      
     </div>
     
     {!isMobile && (
@@ -142,7 +158,6 @@ const Crazy_comp = () => {
                 ))}
               </Swiper>
             )} 
-     
     </>
   );
 };

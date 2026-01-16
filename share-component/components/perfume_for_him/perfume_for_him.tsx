@@ -13,8 +13,6 @@ type IProductsType = {
     src1 : string
 }
 
-
-
 const Perfume_for_him = () => {
     const [hoverIndex, setHoverIndex] = useState<any>(null)
     const [isMobile, setIsMobile] = useState(false)

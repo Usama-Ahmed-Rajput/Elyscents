@@ -14,8 +14,6 @@
   color: black;
 }
 
-
-
 .perfumes {
   display: flex;
   flex-wrap: wrap;
@@ -24,12 +22,9 @@
   max-width: 1320px;
   margin: auto;
   margin-bottom: 40px;
-  width: 100%;
-  cursor: pointer;
   padding: 0 10px; 
   box-sizing: border-box;
 }
-
 
 .perfume_item {
   width: 22%;
@@ -38,6 +33,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .perfume_item img {
@@ -72,7 +68,6 @@
   background: black;
   padding: 8px;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .cart_btn button {
@@ -80,6 +75,7 @@
   color: white;
   cursor: pointer;
 }
+
 
 .filter_product{
   color: black;
