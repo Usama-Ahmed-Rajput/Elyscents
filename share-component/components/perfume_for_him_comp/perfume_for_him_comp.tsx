@@ -18,6 +18,7 @@ const Perfume_for_him_comp = () => {
     const [hoverIndex, setHoverIndex] = useState<any>(null)
         const [isMobile, setIsMobile] = useState(false)
         const [product, setProduct] = useState<IProductsType[]>([])
+        const [sortBy, setSortBy] = useState('featured')
     
     
     useEffect(()=>{
@@ -118,6 +119,26 @@ const Perfume_for_him_comp = () => {
             </div>
         </div>
     )
+
+    const sortedProducts = [...product].sort((a, b) => {
+        if (sortBy === 'az') {
+            return a.name.localeCompare(b.name)
+        }
+
+        if (sortBy === 'za') {
+            return b.name.localeCompare(a.name)
+        }
+
+        if (sortBy === 'low') {
+            return a.real_price - b.real_price
+        }
+
+        if (sortBy === 'high') {
+            return b.real_price - a.real_price
+        }
+
+        return 0
+    })
   return (
     <>
 
@@ -128,12 +149,12 @@ const Perfume_for_him_comp = () => {
     <div className={style.filter_product}>
       <p>8 Products</p>
       <div>
-        <select>
-          <option>Featured</option>
-          <option>Alphabetically, A-Z</option>
-          <option>Alphabetically, Z-A</option>
-          <option>Price, Low to High</option>
-          <option>Price, High to Low</option>
+        <select onChange={(e) => setSortBy(e.target.value)}>
+          <option value="featured">Featured</option>
+          <option value="az">Alphabetically, A-Z</option>
+          <option value="za">Alphabetically, Z-A</option>
+          <option value="low">Price, Low to High</option>
+          <option value="high">Price, High to Low</option>
         </select>
       </div>
       
@@ -141,7 +162,7 @@ const Perfume_for_him_comp = () => {
 
     {!isMobile && (
                 <div className={style.perfumes}>
-                    {product.map((value:IProductsType, index:number) =>
+                    {sortedProducts.map((value:IProductsType, index:number) =>
                         CartItem(value, index)
                     )}
                 </div>
@@ -149,7 +170,7 @@ const Perfume_for_him_comp = () => {
 
             {isMobile && (
                 <Swiper slidesPerView={1.2} spaceBetween={15}>
-                    {product.map((value:IProductsType, index:number) => (
+                    {sortedProducts.map((value:IProductsType, index:number) => (
                         <SwiperSlide key={index}>
                             {CartItem(value, index)}
                         </SwiperSlide>

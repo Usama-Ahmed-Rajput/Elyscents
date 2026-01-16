@@ -86,9 +86,10 @@
   display: flex;
   justify-content: space-around;
   padding: 20px;
-  
+
   select{
     padding: 10px 20px;
+    border: 1px solid gray;
   }
 }
 
