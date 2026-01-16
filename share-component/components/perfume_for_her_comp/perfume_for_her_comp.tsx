@@ -78,7 +78,29 @@ const Perfume_for_her_comp = () => {
             real_price: 1899,
             src: "https://elyscents.pk/cdn/shop/files/velina_2323b953-0e39-4cdb-899e-bd1faeb68d9d.jpg?v=1760522545&width=1080",
             src1: "https://elyscents.pk/cdn/shop/files/Elyscent-Velina.jpg?v=1760522545&width=540"
+        },
+        {
+            name: "She Inspired By Purple Palia",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/She.jpg?v=1760522790&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-She.jpg?v=1760522790&width=540"
+        },
+        {
+            name: "Sitara",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/sitara.jpg?v=1760522786&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Sitara.jpg?v=1760522786&width=540"
+        },
+        {
+            name: "Ripe Muse",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/ripe_muse.jpg?v=1760522794&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Ripe-Muse.jpg?v=1760522794&width=540"
         }
+
         ]);
     }, [])
 
@@ -147,7 +169,7 @@ const Perfume_for_her_comp = () => {
             </div>
 
             <div className={style.filter_product}>
-                <p>8 Products</p>
+                <p>{product.length} Products</p>
                 <div>
                     <select onChange={(e) => setSortBy(e.target.value)}>
                         <option value="featured">Featured</option>

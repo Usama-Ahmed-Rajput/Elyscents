@@ -147,7 +147,7 @@ const Perfume_for_him_comp = () => {
     </div>
 
     <div className={style.filter_product}>
-      <p>8 Products</p>
+      <p>{product.length} Products</p>
       <div>
         <select onChange={(e) => setSortBy(e.target.value)}>
           <option value="featured">Featured</option>

@@ -106,7 +106,119 @@ const Best_perfume_comp = () => {
             real_price: 1899,
             src: "https://elyscents.pk/cdn/shop/files/after_9.jpg?v=1760522742&width=1080",
             src1: "https://elyscents.pk/cdn/shop/files/Elyscents-After_Nine.jpg?v=1760522742&width=540"
-        }
+        },
+        {
+            name: 'Rosy Blossom',
+            cut_price: 2000,
+            real_price: 1699,
+            src: "https://elyscents.pk/cdn/shop/files/rosy_Blossom.jpg?v=1760536616&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Rosy-Blossom.jpg?v=1760536616&width=540"
+        },
+        {
+            name: "Flora Fantasy",
+            cut_price: 2000,
+            real_price: 1599,
+            src: "https://elyscents.pk/cdn/shop/files/Flora_Fantasy.jpg?v=1760523186&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Flora-Fantasy.jpg?v=1760523186&width=540"
+        },
+         {
+            name: "Mystic Pulse",
+            cut_price: 2000,
+            real_price: 1599,
+            src: "https://elyscents.pk/cdn/shop/files/mystic_Pulse.jpg?v=1760523149&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Mystic-Pulse.jpg?v=1760523149&width=540"
+        },
+        {
+                name: 'Oud Essence',
+                cut_price: 2000,
+                real_price: 1799,
+                src: "https://elyscents.pk/cdn/shop/files/Oud_Essence.jpg?v=1760523123&width=1080",
+                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Esscense.jpg?v=1760523123&width=540"
+            },
+             {
+                name: 'Crystal Oud',
+                cut_price: 2100,
+                real_price: 1899,
+                src: "https://elyscents.pk/cdn/shop/files/Crystal_Oud.jpg?v=1760523084&width=1080",
+                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Crystal-Oud.jpg?v=1760523084&width=540"
+            },
+            {
+            name: "Rebel Bloom",
+            cut_price: 2100,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/rebel_bloom.jpg?v=1760522809&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Rebel-Bloom.jpg?v=1760522809&width=540"
+        },
+        {
+            name: "She Inspired By Purple Palia",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/She.jpg?v=1760522790&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-She.jpg?v=1760522790&width=540"
+        },
+        {
+            name: "Velina",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/velina_2323b953-0e39-4cdb-899e-bd1faeb68d9d.jpg?v=1760522545&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscent-Velina.jpg?v=1760522545&width=540"
+        },
+        {
+            name: "Sitara",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/sitara.jpg?v=1760522786&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Sitara.jpg?v=1760522786&width=540"
+        },
+        {
+            name: "Berry Grace",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/berry_grace.jpg?v=1760522656&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Beryy-Grace.jpg?v=1760522656&width=540"
+        },
+        {
+            name: "Ripe Muse",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/ripe_muse.jpg?v=1760522794&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Ripe-Muse.jpg?v=1760522794&width=540"
+        },
+        {
+            name: "Prestor",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/prestor.jpg?v=1760522742&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Prestor.jpg?v=1760522742&width=540"
+        },
+        {
+            name: "Ignitic",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/ignitic.jpg?v=1760522778&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Ignite.jpg?v=1760522778&width=540"
+        },
+        {
+            name: "Lafure",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/lafure.jpg?v=1760522745&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-lafure.jpg?v=1760522745&width=540"
+        },
+        {
+            name: "Astral",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/astral.jpg?v=1760522559&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Astral.jpg?v=1760522559&width=540"
+        },
+        {
+            name: "Mystbin",
+            cut_price: 2000,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/mystbin.jpg?v=1760522742&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Mystbin.jpg?v=1760522742&width=540"
+        },
 
         ]);
     }, [])
@@ -178,7 +290,7 @@ const Best_perfume_comp = () => {
             </div>
 
             <div className={style.filter_product}>
-                <p>8 Products</p>
+                <p>{product.length} Products</p> 
                 <div>
                     <select onChange={(e) => setSortBy(e.target.value)}>
                         <option value="featured">Featured</option>
