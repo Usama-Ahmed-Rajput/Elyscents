@@ -121,7 +121,7 @@ const Best_perfume_comp = () => {
             src: "https://elyscents.pk/cdn/shop/files/Flora_Fantasy.jpg?v=1760523186&width=1080",
             src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Flora-Fantasy.jpg?v=1760523186&width=540"
         },
-         {
+        {
             name: "Mystic Pulse",
             cut_price: 2000,
             real_price: 1599,
@@ -129,20 +129,20 @@ const Best_perfume_comp = () => {
             src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Mystic-Pulse.jpg?v=1760523149&width=540"
         },
         {
-                name: 'Oud Essence',
-                cut_price: 2000,
-                real_price: 1799,
-                src: "https://elyscents.pk/cdn/shop/files/Oud_Essence.jpg?v=1760523123&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Esscense.jpg?v=1760523123&width=540"
-            },
-             {
-                name: 'Crystal Oud',
-                cut_price: 2100,
-                real_price: 1899,
-                src: "https://elyscents.pk/cdn/shop/files/Crystal_Oud.jpg?v=1760523084&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Crystal-Oud.jpg?v=1760523084&width=540"
-            },
-            {
+            name: 'Oud Essence',
+            cut_price: 2000,
+            real_price: 1799,
+            src: "https://elyscents.pk/cdn/shop/files/Oud_Essence.jpg?v=1760523123&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Esscense.jpg?v=1760523123&width=540"
+        },
+        {
+            name: 'Crystal Oud',
+            cut_price: 2100,
+            real_price: 1899,
+            src: "https://elyscents.pk/cdn/shop/files/Crystal_Oud.jpg?v=1760523084&width=1080",
+            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Crystal-Oud.jpg?v=1760523084&width=540"
+        },
+        {
             name: "Rebel Bloom",
             cut_price: 2100,
             real_price: 1899,
@@ -290,7 +290,7 @@ const Best_perfume_comp = () => {
             </div>
 
             <div className={style.filter_product}>
-                <p>{product.length} Products</p> 
+                <p>{product.length} Products</p>
                 <div>
                     <select onChange={(e) => setSortBy(e.target.value)}>
                         <option value="featured">Featured</option>
