@@ -23,7 +23,8 @@ const Best_perfume_comp = () => {
 
     useEffect(() => {
 
-        setProduct([{
+        setProduct([
+            {
             name: 'Royal Oud',
             cut_price: 2000,
             real_price: 1799,

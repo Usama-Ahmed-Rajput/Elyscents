@@ -1,0 +1,244 @@
+    .main_cont {
+        max-width: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0% auto;
+        margin-top: 2%;
+
+
+        .conatiner {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mn_image {
+            // width: 750px;
+            // height: 750px;
+            object-fit: contain;
+        }
+
+        .text_cont {
+            margin-left: 4%;
+            color: black;
+
+            h1 {
+                font-size: 27px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+        }
+
+        .star_cont {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            gap: 8px;
+            margin-top: 4%;
+
+        }
+
+        .star_icon {
+            display: flex;
+            gap: 3px;
+
+            svg {
+                font-size: 19px;
+            }
+        }
+
+        .pricing_sec {
+            display: flex;
+            gap: 14px;
+            margin-top: 1%;
+
+            p {
+                font-size: 19px;
+                color: rgb(38, 38, 38);
+            }
+
+            .orignal_price {
+                text-decoration: line-through;
+            }
+
+            span {
+                color: #C20000;
+                font-size: 19px;
+            }
+        }
+
+        .free_deliver_sec {
+            background-color: #FFF1EC;
+            padding: 15px;
+            width: 550px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            border-left: 3px solid #FF694B;
+            margin-top: 3%;
+        }
+
+        .shiping_details {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 5%;
+
+            span {
+                display: flex;
+                gap: 7px;
+                text-align: center;
+                font-size: 17px;
+
+                svg {
+                    font-size: 24px;
+                }
+            }
+
+            .green_dot {
+                font-size: 17px;
+
+                svg {
+                    color: #54C63A;
+                }
+            }
+        }
+
+        .perfumes_options {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5%;
+            row-gap: 10px;
+
+            select {
+                border: 1px solid rgb(54, 54, 54);
+                padding: 10px;
+                font-size: 13px;
+                letter-spacing: 3px;
+                color: rgb(53, 53, 53);
+            }
+
+            .lable_txt {
+                color: rgb(75, 75, 75);
+                letter-spacing: 3px;
+                font-size: 15px;
+            }
+        }
+
+        .add_btns {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            margin-top: 3%;
+
+            .add_to_cart_btn {
+                padding: 10px;
+                border: 1px solid rgb(40, 40, 40);
+                cursor: pointer;
+                font-weight: bold;
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+
+            .buy_now_btn {
+                padding: 10px;
+                cursor: pointer;
+                background-color: #E30505;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 2px;
+                font-size: 14px;
+            }
+        }
+
+        .why_thiss__sec {
+            max-width: 430px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 22px;
+            margin-top: 4%;
+
+            p {
+                color: rgb(29, 29, 29);
+                font-size: 19px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .information_cont {
+            margin-top: 5%;
+
+            h2 {
+                font-size: 19px;
+                font-weight: bold;
+                margin-bottom: 5%;
+
+            }
+            .accordion_title {
+                border: 1px solid rgb(187, 187, 187);
+                border-bottom: none;
+                padding: 15px;
+                align-items: center;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                position: relative;
+
+                h3 {
+                    color: rgb(97, 97, 97);
+                    letter-spacing: 3px;
+                    font-size: 14px;
+                }
+
+                svg {
+                    color: gray;
+                    position: absolute;
+                    right: 15;
+                    top: 18;
+                }
+            }
+
+            .icon svg {
+                transition: transform 0.3s ease;
+            }
+
+            .rotate svg {
+                transform: rotate(180deg);
+            }
+
+            .accordion_content {
+                padding: 0 0 0 10px;
+                border: 1px solid rgb(187, 187, 187);
+                border-top: none;
+                border-bottom: none;
+                height: 0;
+                overflow: hidden;
+                transition: all 0.3s ease;
+
+                &.active {
+                    height: 176px;
+                    padding: 10px;
+                    margin-top: 2%;
+                }
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 5px;
+                    font-size: 17px;
+                }
+
+                p{
+                    color: rgb(69, 69, 69);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:1440px) {
+        .main_cont {
+            padding: 0 50px;
+        }
+    }

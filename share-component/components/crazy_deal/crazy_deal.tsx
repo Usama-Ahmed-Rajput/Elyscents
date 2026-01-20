@@ -92,13 +92,16 @@ const Crazy_deal = () => {
   }, [])
  
   const CartItem = (value: any, index: number) => (
+   
     <div className={style.perfume_item} key={index}>
+    <Link href="/product_detail">
       <img
         src={hoverIndex === index ? value.src1 : value.src}
         onMouseEnter={() => setHoverIndex(index)}
         onMouseLeave={() => setHoverIndex(null)}
         alt=""
-      />
+        />
+        </Link>
 
       <h3 className={style.deal_names}>{value.name}</h3>
 
@@ -117,6 +120,8 @@ const Crazy_deal = () => {
         <button>Add to Cart</button>
       </div>
     </div>
+    
+    
   )
   return (
     <>

@@ -18,7 +18,7 @@ const Footer: FC = () => {
       <ul className={styles.links}>
         <li>Return & Exchange Policy</li>
         <li>Track Order</li>
-        <li>Search</li>
+        <li><Link href="/search">Search</Link></li>
         <li><Link href="/about_us">About Us</Link></li>
         <li><Link href="/contact_us">Contact Us</Link></li>
         <li>Blog</li>

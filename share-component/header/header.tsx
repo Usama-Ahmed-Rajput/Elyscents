@@ -34,9 +34,11 @@ const Header = () => {
         <div className={style.container}>
           <div className={style.top_line}>
             <div className={style.left_icons}>
+              <Link href='/search'>
               <div className={style.desktop_search_icon}>
                 <CiSearch />
               </div>
+              </Link>
               <div
                 className={style.hamburger_icon}
                 onClick={() => toggleDrawer(true)}

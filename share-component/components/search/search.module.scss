@@ -1,0 +1,29 @@
+body,html{
+  background-color:rgb(230, 230, 230);
+}
+
+.search_input {
+  color: black;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+   position: relative;
+
+input{
+  border: 1px solid black;
+  outline: none;
+  padding: 8px;
+  background-color: #fff;
+  width: 70%;
+  margin-bottom: 100px;
+ 
+} 
+
+.icon{
+  font-size: 30px;
+  position:absolute;
+  margin-left: 65%;
+  margin-top: 5px;
+}
+}

@@ -28,8 +28,10 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname()
   const hiddenNavbar = pathname === "/login"
+  
   return (
     <html lang="en">
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
