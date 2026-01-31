@@ -5,11 +5,18 @@ import { FaStar } from "react-icons/fa";
 import { CiGift } from "react-icons/ci";
 import { TbWorld } from "react-icons/tb";
 import { FaCircleDot, FaChevronUp } from "react-icons/fa6";
-
+import { FaFacebook, FaTwitter, FaPinterest } from "react-icons/fa";
+import { useSearchParams } from "next/navigation";
 
 const Product_detail_page = () => {
   const [open, setOpen] = useState(false)
   const [usama, setUsama] = useState(false)
+
+  const searchParams = useSearchParams();
+  const id = searchParams.get("id");
+
+  console.log(id)
+
   return (
     <>
 
@@ -148,23 +155,54 @@ const Product_detail_page = () => {
                 </div>
               </div>
 
-              {/* <div className={`${style.accordion_item} ${usama ? style.active : ''}`}>
-                <div className={style.accordion_title} onClick={() => setUsama(!usama)}>
+              <div className={`${style.accordion_item} ${usama ? style.active : ''}`}>
+                <div
+                  className={style.accordion_title}
+                  onClick={() => setUsama(!usama)}
+                >
                   <h3>ASK A QUESTION</h3>
-                  <span className={`${style.icon} ${usama ? style.rotate : ''}`}><FaChevronUp /></span>
+                  <span className={`${style.icon} ${usama ? style.rotate : ''}`}>
+                    <FaChevronUp />
+                  </span>
                 </div>
 
                 <div className={`${style.accordion_content2} ${usama ? style.active : ''}`}>
-                  <div>
-                    <label htmlFor="">NAME</label>
-                    <input type="text" />
-                    <label htmlFor="">EMAIL</label>
-                    <input type="text" />
-                  </div>
+                  <form className={style.ask_form}>
 
+                    <div className={style.form_row}>
+                      <div className={style.form_group}>
+                        <label>NAME</label>
+                        <input type="text" placeholder="Your Name" />
+                      </div>
+
+                      <div className={style.form_group}>
+                        <label>EMAIL</label>
+                        <input type="email" placeholder="Your Email" />
+                      </div>
+                    </div>
+
+                    <div className={style.form_group}>
+                      <label>MESSAGE</label>
+                      <textarea placeholder="Write your question here..." />
+                    </div>
+
+                    <button type="submit" className={style.send_btn}>
+                      SEND
+                    </button>
+
+                    <p className={style.captcha_text}>
+                      This site is protected by hCaptcha and the hCaptcha Privacy Policy and
+                      Terms of Service apply.
+                    </p>
+
+                  </form>
                 </div>
-
-              </div> */}
+              </div>
+            </div>
+            <div className={style.social}>
+              <span className={style.icon_title}><FaFacebook />Share</span>
+              <span className={style.icon_title}><FaTwitter />Tweet</span>
+              <span className={style.icon_title}><FaPinterest />Pin it</span>
             </div>
 
           </div>

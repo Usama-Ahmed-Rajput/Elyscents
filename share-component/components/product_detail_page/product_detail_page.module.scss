@@ -1,244 +1,450 @@
     .main_cont {
-        max-width: 1400px;
+      max-width: 1400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0% auto;
+      margin-top: 2%;
+      margin-bottom: 8%;
+
+
+      .conatiner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .mn_image {
+        position: sticky;
+        object-fit: contain;
+        top: 30px;
+      }
+
+      .text_cont {
+        margin-left: 4%;
+        color: black;
+
+        h1 {
+          font-size: 27px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+      }
+
+      .star_cont {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 4%;
+
+      }
+
+      .star_icon {
+        display: flex;
+        gap: 3px;
+
+        svg {
+          font-size: 19px;
+        }
+      }
+
+      .pricing_sec {
+        display: flex;
+        gap: 14px;
+        margin-top: 1%;
+
+        p {
+          font-size: 19px;
+          color: rgb(38, 38, 38);
+        }
+
+        .orignal_price {
+          text-decoration: line-through;
+        }
+
+        span {
+          color: #C20000;
+          font-size: 19px;
+        }
+      }
+
+      .free_deliver_sec {
+        background-color: #FFF1EC;
+        padding: 15px;
+        width: 550px;
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        border-left: 3px solid #FF694B;
+        margin-top: 3%;
+      }
+
+      .shiping_details {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin: 0% auto;
-        margin-top: 2%;
+        row-gap: 10px;
+        margin-top: 5%;
 
+        span {
+          display: flex;
+          gap: 7px;
+          text-align: center;
+          font-size: 17px;
 
-        .conatiner {
-            display: flex;
-            justify-content: center;
+          svg {
+            font-size: 24px;
+          }
         }
 
-        .mn_image {
-            // width: 750px;
-            // height: 750px;
-            object-fit: contain;
+        .green_dot {
+          font-size: 17px;
+
+          svg {
+            color: #54C63A;
+          }
+        }
+      }
+
+      .perfumes_options {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        row-gap: 10px;
+
+        select {
+          border: 1px solid rgb(54, 54, 54);
+          padding: 10px;
+          font-size: 13px;
+          letter-spacing: 3px;
+          color: rgb(53, 53, 53);
         }
 
-        .text_cont {
-            margin-left: 4%;
-            color: black;
+        .lable_txt {
+          color: rgb(75, 75, 75);
+          letter-spacing: 3px;
+          font-size: 15px;
+        }
+      }
 
-            h1 {
-                font-size: 27px;
-                font-weight: bold;
-                letter-spacing: 1px;
-            }
+      .add_btns {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 3%;
+
+        .add_to_cart_btn {
+          padding: 10px;
+          border: 1px solid rgb(40, 40, 40);
+          cursor: pointer;
+          font-weight: bold;
+          letter-spacing: 2px;
+          font-size: 14px;
         }
 
-        .star_cont {
-            display: flex;
-            text-align: center;
-            align-items: center;
-            gap: 8px;
-            margin-top: 4%;
+        .buy_now_btn {
+          padding: 10px;
+          cursor: pointer;
+          background-color: #E30505;
+          font-weight: bold;
+          color: white;
+          letter-spacing: 2px;
+          font-size: 14px;
+        }
+      }
+
+      .why_thiss__sec {
+        max-width: 430px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+        margin-top: 4%;
+
+        p {
+          color: rgb(29, 29, 29);
+          font-size: 19px;
+          letter-spacing: 1px;
+        }
+      }
+
+      .information_cont {
+        margin-top: 5%;
+
+        h2 {
+          font-size: 19px;
+          font-weight: bold;
+          margin-bottom: 5%;
 
         }
 
-        .star_icon {
-            display: flex;
-            gap: 3px;
+        .accordion_title {
+          border: 1px solid rgb(187, 187, 187);
+          border-bottom: none;
+          padding: 15px;
+          align-items: center;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          position: relative;
 
-            svg {
-                font-size: 19px;
-            }
+          h3 {
+            color: rgb(97, 97, 97);
+            letter-spacing: 3px;
+            font-size: 14px;
+          }
+
+          svg {
+            color: gray;
+            position: absolute;
+            right: 15;
+            top: 18;
+          }
         }
 
-        .pricing_sec {
-            display: flex;
-            gap: 14px;
-            margin-top: 1%;
-
-            p {
-                font-size: 19px;
-                color: rgb(38, 38, 38);
-            }
-
-            .orignal_price {
-                text-decoration: line-through;
-            }
-
-            span {
-                color: #C20000;
-                font-size: 19px;
-            }
+        .icon svg {
+          transition: transform 0.3s ease;
         }
 
-        .free_deliver_sec {
-            background-color: #FFF1EC;
-            padding: 15px;
-            width: 550px;
-            font-size: 15px;
-            letter-spacing: 1px;
-            border-radius: 10px;
-            border-left: 3px solid #FF694B;
-            margin-top: 3%;
+        .rotate svg {
+          transform: rotate(180deg);
         }
 
-        .shiping_details {
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
-            margin-top: 5%;
+        .accordion_content {
+          padding: 0 0 0 10px;
+          border: 1px solid rgb(187, 187, 187);
+          border-top: none;
+          border-bottom: none;
+          height: 0;
+          overflow: hidden;
+          transition: all 0.3s ease;
 
-            span {
-                display: flex;
-                gap: 7px;
-                text-align: center;
-                font-size: 17px;
+          &.active {
+            height: 176px;
+            padding: 10px;
+            margin-top: 2%;
+          }
 
-                svg {
-                    font-size: 24px;
-                }
-            }
-
-            .green_dot {
-                font-size: 17px;
-
-                svg {
-                    color: #54C63A;
-                }
-            }
-        }
-
-        .perfumes_options {
-            display: flex;
-            flex-direction: column;
-            margin-top: 5%;
-            row-gap: 10px;
-
-            select {
-                border: 1px solid rgb(54, 54, 54);
-                padding: 10px;
-                font-size: 13px;
-                letter-spacing: 3px;
-                color: rgb(53, 53, 53);
-            }
-
-            .lable_txt {
-                color: rgb(75, 75, 75);
-                letter-spacing: 3px;
-                font-size: 15px;
-            }
-        }
-
-        .add_btns {
-            display: flex;
-            flex-direction: column;
-            row-gap: 10px;
-            margin-top: 3%;
-
-            .add_to_cart_btn {
-                padding: 10px;
-                border: 1px solid rgb(40, 40, 40);
-                cursor: pointer;
-                font-weight: bold;
-                letter-spacing: 2px;
-                font-size: 14px;
-            }
-
-            .buy_now_btn {
-                padding: 10px;
-                cursor: pointer;
-                background-color: #E30505;
-                font-weight: bold;
-                color: white;
-                letter-spacing: 2px;
-                font-size: 14px;
-            }
-        }
-
-        .why_thiss__sec {
-            max-width: 430px;
+          li {
             display: flex;
             flex-direction: column;
-            row-gap: 22px;
-            margin-top: 4%;
+            row-gap: 5px;
+            font-size: 17px;
+          }
 
-            p {
-                color: rgb(29, 29, 29);
-                font-size: 19px;
-                letter-spacing: 1px;
-            }
+          p {
+            color: rgb(69, 69, 69);
+            font-size: 16px;
+          }
         }
-
-        .information_cont {
-            margin-top: 5%;
-
-            h2 {
-                font-size: 19px;
-                font-weight: bold;
-                margin-bottom: 5%;
-
-            }
-            .accordion_title {
-                border: 1px solid rgb(187, 187, 187);
-                border-bottom: none;
-                padding: 15px;
-                align-items: center;
-                cursor: pointer;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                position: relative;
-
-                h3 {
-                    color: rgb(97, 97, 97);
-                    letter-spacing: 3px;
-                    font-size: 14px;
-                }
-
-                svg {
-                    color: gray;
-                    position: absolute;
-                    right: 15;
-                    top: 18;
-                }
-            }
-
-            .icon svg {
-                transition: transform 0.3s ease;
-            }
-
-            .rotate svg {
-                transform: rotate(180deg);
-            }
-
-            .accordion_content {
-                padding: 0 0 0 10px;
-                border: 1px solid rgb(187, 187, 187);
-                border-top: none;
-                border-bottom: none;
-                height: 0;
-                overflow: hidden;
-                transition: all 0.3s ease;
-
-                &.active {
-                    height: 176px;
-                    padding: 10px;
-                    margin-top: 2%;
-                }
-
-                li {
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 5px;
-                    font-size: 17px;
-                }
-
-                p{
-                    color: rgb(69, 69, 69);
-                    font-size: 16px;
-                }
-            }
-        }
+      }
     }
 
     @media (max-width:1440px) {
-        .main_cont {
-            padding: 0 50px;
+      .main_cont {
+        padding: 0 50px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main_cont {
+        padding: 0 15px;
+        margin-top: 5%;
+
+        .conatiner {
+          flex-direction: column;
+          align-items: center;
         }
+
+        .mn_image {
+          width: 100%;
+          max-height: 320px;
+        }
+
+        .text_cont {
+          margin-left: 0;
+          margin-top: 20px;
+
+          h1 {
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+
+        .star_cont {
+          justify-content: center;
+          margin-top: 10px;
+        }
+
+        .pricing_sec {
+          justify-content: center;
+
+          p,
+          span {
+            font-size: 16px;
+          }
+        }
+
+        .free_deliver_sec {
+          width: 100%;
+          font-size: 14px;
+          padding: 12px;
+        }
+
+        .shiping_details {
+          span {
+            font-size: 15px;
+
+            svg {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .perfumes_options {
+          select {
+            width: 100%;
+          }
+        }
+
+        .add_btns {
+
+          .add_to_cart_btn,
+          .buy_now_btn {
+            width: 100%;
+            font-size: 13px;
+          }
+        }
+
+        .why_thiss__sec {
+          max-width: 100%;
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .information_cont {
+          h2 {
+            font-size: 17px;
+          }
+
+          .accordion_title h3 {
+            font-size: 12px;
+          }
+
+          .accordion_content {
+            &.active {
+              height: auto;
+            }
+
+            p,
+            li {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .accordion_content2 {
+      border: 1px solid rgb(187, 187, 187);
+      border-top: none;
+      padding: 0 10px;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      &.active {
+        height: auto;
+        padding: 20px 15px;
+        margin-top: 2%;
+      }
+    }
+
+    .ask_form {
+      width: 100%;
+    }
+
+    .form_row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      // flex-direction: column;
+    }
+
+    .form_group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        font-size: 13px;
+        letter-spacing: 3px;
+        color: rgb(75, 75, 75);
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        border: 1px solid rgb(187, 187, 187);
+        padding: 12px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+    }
+
+    .send_btn {
+      margin: 0 auto;
+      display: block;
+      background-color: #000;
+      color: white;
+      padding: 12px 45px;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .captcha_text {
+      margin-top: 20px;
+      font-size: 12px;
+      color: rgb(120, 120, 120);
+      text-align: center;
+    }
+
+
+    .social{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      
+      .icon_title{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main_cont {
+        .text_cont h1 {
+          font-size: 18px;
+        }
+
+        .pricing_sec {
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+        }
+      }
     }
