@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <div className={style.top_caption}>
-        Buy any two perfumes & get free shipping
+        Buy any two perfumes & get free shipping.
       </div>
 
       <nav className={style.header}>
