@@ -5,7 +5,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { BsBag } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { FaInstagram, FaFacebook, FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube, FaTiktok} from "react-icons/fa";
 import { Drawer } from "@mui/material";
 import Link from "next/link";
 import style from './header.module.scss'
@@ -86,13 +86,13 @@ const Header = () => {
               <li className={style.dropdown_parent}>
                 <Link href="/perfume">All Perfumes</Link>
                 <ul className={style.drop_down}>
-                  <li>Men</li>
-                  <li>Women</li>
-                  <li>Unisex</li>
-                  <li>Oud Collection</li>
-                  <li>Best Seller</li>
-                  <li>New Arrivals</li>
-                  <li>Crazy Deals</li>
+                  <Link href="/perfume_for_him"><li>Men</li></Link>
+                  <Link href="/perfume_for_her"><li>Women</li></Link>
+                  <Link href="/unisex"><li>Unisex</li></Link>
+                  <Link href="/oud_collection"><li>Oud Collection</li></Link>
+                  <Link href="/best_selling"><li>Best Seller</li></Link>
+                  <Link href="/new_arrivals"><li>New Arrivals</li></Link>
+                  <Link href="/crazy_deals"><li>Crazy Deals</li></Link>
                 </ul>
               </li>
 
