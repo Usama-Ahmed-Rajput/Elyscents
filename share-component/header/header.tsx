@@ -5,7 +5,7 @@ import { IoPersonOutline } from "react-icons/io5";
 import { BsBag } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { FaInstagram, FaFacebook, FaYoutube, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaYoutube, FaTiktok} from "react-icons/fa";
 import { Drawer } from "@mui/material";
 import Link from "next/link";
 import style from './header.module.scss'
