@@ -35,9 +35,9 @@ const Header = () => {
           <div className={style.top_line}>
             <div className={style.left_icons}>
               <Link href='/search'>
-              <div className={style.desktop_search_icon}>
-                <CiSearch />
-              </div>
+                <div className={style.desktop_search_icon}>
+                  <CiSearch />
+                </div>
               </Link>
               <div
                 className={style.hamburger_icon}
@@ -83,9 +83,19 @@ const Header = () => {
               <li>
                 <Link href="/">Home</Link>
               </li>
-              <li>
+              <li className={style.dropdown_parent}>
                 <Link href="/perfume">All Perfumes</Link>
+                <ul className={style.drop_down}>
+                  <Link href="/perfume_for_him"><li>Men</li></Link>
+                  <Link href="/perfume_for_her"><li>Women</li></Link>
+                  <Link href="/unisex"><li>Unisex</li></Link>
+                  <Link href="/oud_collection"><li>Oud Collection</li></Link>
+                  <Link href="/best_selling"><li>Best Seller</li></Link>
+                  <Link href="/new_arrivals"><li>New Arrivals</li></Link>
+                  <Link href="/crazy_deals"><li>Crazy Deals</li></Link>
+                </ul>
               </li>
+
               <li>
                 <Link href="/crazy_deals">Crazy Deals</Link>
               </li>

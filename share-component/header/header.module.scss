@@ -92,17 +92,51 @@
   list-style: none;
   padding: 0;
   margin: 10px 0 0 0;
+
 }
 
 .link_pages>li:hover {
   text-decoration: 2px underline;
 }
 
+.dropdown_parent {
+  position: relative;
+}
+
+.drop_down {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 220px;
+  display: none;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+
+.drop_down li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.drop_down li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown_parent:hover .drop_down {
+  display: block;
+}
+
+
+
 .desktop_nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 
