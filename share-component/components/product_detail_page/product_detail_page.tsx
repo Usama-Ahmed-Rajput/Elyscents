@@ -65,8 +65,8 @@ const Product_detail_page = () => {
               </select>
               <label htmlFor="perfume2" className={style.lable_txt}>PERFUME 2</label>
               <select id="perfume1">
-                <option>WILD ESSENCE - INSPIRED BY DIOR</option>
                 <option>ZARAK INSPIRED BY AZZARO WANTED</option>
+                <option>WILD ESSENCE - INSPIRED BY DIOR</option>
                 <option>SALSA SPIRIT - INPIRED BY CREED</option>
                 <option>ROYAL OUD</option>
                 <option>PEAK BREEZE - INSPIRED BY SILVER</option>
@@ -76,9 +76,9 @@ const Product_detail_page = () => {
               </select>
               <label htmlFor="perfume3" className={style.lable_txt}>PERFUME 3</label>
               <select id="perfume1">
-                <option>SALSA SPIRIT - INPIRED BY CREED</option>
-                <option>WILD ESSENCE - INSPIRED BY DIOR</option>
                 <option>ZARAK INSPIRED BY AZZARO WANTED</option>
+                <option>WILD ESSENCE - INSPIRED BY DIOR</option>
+                <option>SALSA SPIRIT - INPIRED BY CREED</option>
                 <option>ROYAL OUD</option>
                 <option>PEAK BREEZE - INSPIRED BY SILVER</option>
                 <option>GREEN ELIXIR - INSPIRED BY ISSEY MIYAKE</option>
@@ -87,10 +87,10 @@ const Product_detail_page = () => {
               </select>
               <label htmlFor="perfume4" className={style.lable_txt}>PERFUME 4</label>
               <select id="perfume1">
-                <option>ROYAL OUD</option>
+                <option>ZARAK INSPIRED BY AZZARO WANTED</option>
                 <option>WILD ESSENCE - INSPIRED BY DIOR</option>
                 <option>SALSA SPIRIT - INPIRED BY CREED</option>
-                <option>ZARAK INSPIRED BY AZZARO WANTED</option>
+                <option>ROYAL OUD</option>
                 <option>PEAK BREEZE - INSPIRED BY SILVER</option>
                 <option>GREEN ELIXIR - INSPIRED BY ISSEY MIYAKE</option>
                 <option>EXOTIC PULSE</option>
@@ -98,21 +98,21 @@ const Product_detail_page = () => {
               </select>
               <label htmlFor="perfume5" className={style.lable_txt}>PERFUME 5</label>
               <select id="perfume1">
-                <option>PEAK BREEZE - INSPIRED BY SILVER</option>
+                <option>ZARAK INSPIRED BY AZZARO WANTED</option>
                 <option>WILD ESSENCE - INSPIRED BY DIOR</option>
                 <option>SALSA SPIRIT - INPIRED BY CREED</option>
-                <option>ZARAK INSPIRED BY AZZARO WANTED</option>
                 <option>ROYAL OUD</option>
+                <option>PEAK BREEZE - INSPIRED BY SILVER</option>
                 <option>GREEN ELIXIR - INSPIRED BY ISSEY MIYAKE</option>
                 <option>EXOTIC PULSE</option>
                 <option>APEX INSPIRED BY DUNHILL</option>
               </select>
               <label htmlFor="perfume6" className={style.lable_txt}>PERFUME 6</label>
               <select id="perfume1">
+                <option>ZARAK INSPIRED BY AZZARO WANTED</option>
                 <option>WILD ESSENCE - INSPIRED BY DIOR</option>
                 <option>SALSA SPIRIT - INPIRED BY CREED</option>
                 <option>ROYAL OUD</option>
-                <option>ZARAK INSPIRED BY AZZARO WANTED</option>
                 <option>PEAK BREEZE - INSPIRED BY SILVER</option>
                 <option>GREEN ELIXIR - INSPIRED BY ISSEY MIYAKE</option>
                 <option>EXOTIC PULSE</option>

@@ -62,7 +62,10 @@ const Footer: FC = () => {
         <p>Phone: 0301-2546333</p>
         <p>Customer Support: helloelyscents@gmail.com</p>
       </div>
-
+<div className={styles.cridit}>
+  <p>© 2026 Elyscents</p>
+  <p>Powered by Usama Ahmed</p>
+</div>
     </footer>
   )
 }
