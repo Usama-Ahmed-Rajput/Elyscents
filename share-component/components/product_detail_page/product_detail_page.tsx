@@ -12,10 +12,10 @@ const Product_detail_page = () => {
   const [open, setOpen] = useState(false)
   const [usama, setUsama] = useState(false)
 
-  const searchParams = useSearchParams();
-  const id = searchParams.get("id");
+  // const searchParams = useSearchParams();
+  // const id = searchParams.get("id");
 
-  console.log(id)
+  // console.log(id)
 
   return (
     <>
