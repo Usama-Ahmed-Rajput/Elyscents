@@ -1,0 +1,92 @@
+{
+  "perfume_for_her": [
+    {
+      "slug": "rosy-blossom",
+      "name": "Rosy Blossom",
+      "cut_price": 2000,
+      "real_price": 1699,
+      "src": "https://elyscents.pk/cdn/shop/files/rosy_Blossom.jpg?v=1760536616&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Rosy-Blossom.jpg?v=1760536616&width=540"
+    },
+    {
+      "slug": "flora-fantasy",
+      "name": "Flora Fantasy",
+      "cut_price": 2000,
+      "real_price": 1599,
+      "src": "https://elyscents.pk/cdn/shop/files/Flora_Fantasy.jpg?v=1760523186&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Flora-Fantasy.jpg?v=1760523186&width=540"
+    },
+    {
+      "slug": "berry-grace",
+      "name": "Berry Grace",
+      "cut_price": 2000,
+      "real_price": 1899,
+      "src": "https://elyscents.pk/cdn/shop/files/berry_grace.jpg?v=1760522656&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Beryy-Grace.jpg?v=1760522656&width=540"
+    },
+    {
+      "slug": "mystic-pulse",
+      "name": "Mystic Pulse",
+      "cut_price": 2000,
+      "real_price": 1599,
+      "src": "https://elyscents.pk/cdn/shop/files/mystic_Pulse.jpg?v=1760523149&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Mystic-Pulse.jpg?v=1760523149&width=540"
+    },
+    {
+      "slug": "rebel-bloom",
+      "name": "Rebel Bloom",
+      "cut_price": 2100,
+      "real_price": 1899,
+      "src": "https://elyscents.pk/cdn/shop/files/rebel_bloom.jpg?v=1760522809&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Rebel-Bloom.jpg?v=1760522809&width=540"
+    },
+    {
+      "slug": "floral-muse",
+      "name": "Floral Muse",
+      "cut_price": 2000,
+      "real_price": 1699,
+      "src": "https://elyscents.pk/cdn/shop/files/Floral_Muse.jpg?v=1760523165&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Floral-Muse.jpg?v=1760523165&width=540"
+    },
+    {
+      "slug": "empress-whif",
+      "name": "Empress Whif",
+      "cut_price": 2000,
+      "real_price": 1599,
+      "src": "https://elyscents.pk/cdn/shop/files/Empress_whiff.jpg?v=1760523195&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Empress-Whiff.jpg?v=1760523195&width=540"
+    },
+    {
+      "slug": "velina",
+      "name": "Velina",
+      "cut_price": 2000,
+      "real_price": 1899,
+      "src": "https://elyscents.pk/cdn/shop/files/velina_2323b953-0e39-4cdb-899e-bd1faeb68d9d.jpg?v=1760522545&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscent-Velina.jpg?v=1760522545&width=540"
+    },
+    {
+      "slug": "she-inspired-by-purple-palia",
+      "name": "She Inspired By Purple Palia",
+      "cut_price": 2000,
+      "real_price": 1899,
+      "src": "https://elyscents.pk/cdn/shop/files/She.jpg?v=1760522790&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-She.jpg?v=1760522790&width=540"
+    },
+    {
+      "slug": "sitara",
+      "name": "Sitara",
+      "cut_price": 2000,
+      "real_price": 1899,
+      "src": "https://elyscents.pk/cdn/shop/files/sitara.jpg?v=1760522786&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Sitara.jpg?v=1760522786&width=540"
+    },
+    {
+      "slug": "ripe-muse",
+      "name": "Ripe Muse",
+      "cut_price": 2000,
+      "real_price": 1899,
+      "src": "https://elyscents.pk/cdn/shop/files/ripe_muse.jpg?v=1760522794&width=1080",
+      "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Ripe-Muse.jpg?v=1760522794&width=540"
+    }
+  ]
+}

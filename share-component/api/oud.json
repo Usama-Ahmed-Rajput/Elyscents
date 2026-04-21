@@ -1,0 +1,68 @@
+{
+    "oud_products": [
+        {
+            "slug": "oud-majesty",
+            "name": "Oud Majesty",
+            "cut_price": 2000,
+            "real_price": 1899,
+            "src": "https://elyscents.pk/cdn/shop/files/Oud_majesty.jpg?v=1760523188&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Majesty.jpg?v=1760523200&width=540"
+        },
+        {
+            "slug": "oud-essence",
+            "name": "Oud Essence",
+            "cut_price": 2000,
+            "real_price": 1799,
+            "src": "https://elyscents.pk/cdn/shop/files/Oud_Essence.jpg?v=1760523123&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Esscense.jpg?v=1760523123&width=540"
+        },
+        {
+            "slug": "dream-oud",
+            "name": "Dream Oud",
+            "cut_price": 2000,
+            "real_price": 1799,
+            "src": "https://elyscents.pk/cdn/shop/files/Dream_Oud.jpg?v=1760522968&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Dream-Oud.jpg?v=1760522968&width=540"
+        },
+        {
+            "slug": "oud-velvet",
+            "name": "Oud Velvet",
+            "cut_price": 2000,
+            "real_price": 1899,
+            "src": "https://elyscents.pk/cdn/shop/files/Oud_Velvet.jpg?v=1760522977&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Velvet.jpg?v=1760522977&width=540"
+        },
+        {
+            "slug": "royal-oud",
+            "name": "Royal Oud",
+            "cut_price": 2000,
+            "real_price": 1799,
+            "src": "https://elyscents.pk/cdn/shop/files/Royal_Oud_32df109e-c80d-4239-8c63-9f9a5a3ac58b.jpg?v=1760522995&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Royal-Oud.jpg?v=1760522995&width=540"
+        },
+        {
+            "slug": "oud-evergreen",
+            "name": "Oud Evergreen",
+            "cut_price": 2000,
+            "real_price": 1899,
+            "src": "https://elyscents.pk/cdn/shop/files/Oud_EverGreen.jpg?v=1760523484&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Evergreen.jpg?v=1760523484&width=540"
+        },
+        {
+            "slug": "resham-oud",
+            "name": "Resham Oud",
+            "cut_price": 2000,
+            "real_price": 1899,
+            "src": "https://elyscents.pk/cdn/shop/files/resham_oud.jpg?v=1760523035&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Resham-Oud.jpg?v=1760523035&width=540"
+        },
+        {
+            "slug": "crystal-oud",
+            "name": "Crystal Oud",
+            "cut_price": 2100,
+            "real_price": 1899,
+            "src": "https://elyscents.pk/cdn/shop/files/Crystal_Oud.jpg?v=1760523084&width=1080",
+            "src1": "https://elyscents.pk/cdn/shop/files/Elyscents-Crystal-Oud.jpg?v=1760523084&width=540"
+        }
+    ]
+}

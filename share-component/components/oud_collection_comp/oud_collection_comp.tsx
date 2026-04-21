@@ -1,9 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
+// import 'swiper/css'
 import style from './oud_collection_comp.module.scss'
 import Link from 'next/link'
+import {oud_products} from "@/share-component/api/oud.json"
 
 type IProductsType = {
     name: string,
@@ -20,66 +21,10 @@ const Oud_collection_comp = () => {
     const [product, setProduct] = useState<IProductsType[]>([])
     const [sortBy, setSortBy] = useState('featured')
 
-    useEffect(() => {
-        setProduct([
-            {
-                name: 'Oud Majesty',
-                cut_price: 2000,
-                real_price: 1899,
-                src: "https://elyscents.pk/cdn/shop/files/Oud_majesty.jpg?v=1760523188&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Majesty.jpg?v=1760523200&width=540"
-            },
-            {
-                name: 'Oud Essence',
-                cut_price: 2000,
-                real_price: 1799,
-                src: "https://elyscents.pk/cdn/shop/files/Oud_Essence.jpg?v=1760523123&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Esscense.jpg?v=1760523123&width=540"
-            },
-            {
-                name: 'Dream Oud',
-                cut_price: 2000,
-                real_price: 1799,
-                src: "https://elyscents.pk/cdn/shop/files/Dream_Oud.jpg?v=1760522968&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Dream-Oud.jpg?v=1760522968&width=540"
-            },
-            {
-                name: 'Oud Velvet',
-                cut_price: 2000,
-                real_price: 1899,
-                src: "https://elyscents.pk/cdn/shop/files/Oud_Velvet.jpg?v=1760522977&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Velvet.jpg?v=1760522977&width=540"
-            },
-            {
-                name: 'Royal Oud',
-                cut_price: 2000,
-                real_price: 1799,
-                src: "https://elyscents.pk/cdn/shop/files/Royal_Oud_32df109e-c80d-4239-8c63-9f9a5a3ac58b.jpg?v=1760522995&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Royal-Oud.jpg?v=1760522995&width=540"
-            },
-            {
-                name: 'Oud Evergreen',
-                cut_price: 2000,
-                real_price: 1899,
-                src: "https://elyscents.pk/cdn/shop/files/Oud_EverGreen.jpg?v=1760523484&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Oud-Evergreen.jpg?v=1760523484&width=540"
-            },
-            {
-                name: 'Resham Oud',
-                cut_price: 2000,
-                real_price: 1899,
-                src: "https://elyscents.pk/cdn/shop/files/resham_oud.jpg?v=1760523035&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Resham-Oud.jpg?v=1760523035&width=540"
-            },
-            {
-                name: 'Crystal Oud',
-                cut_price: 2100,
-                real_price: 1899,
-                src: "https://elyscents.pk/cdn/shop/files/Crystal_Oud.jpg?v=1760523084&width=1080",
-                src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Crystal-Oud.jpg?v=1760523084&width=540"
-            }
-        ]);
-    }, [])
+    
+useEffect(()=>{
+    setProduct(oud_products)
+},[])
 
     useEffect(() => {
         const handleResize = () => {
@@ -93,12 +38,14 @@ const Oud_collection_comp = () => {
 
     const CartItem = (value: any, index: number) => (
         <div className={style.perfume_item} key={index}>
+            <Link href={`/product_detail/${value.slug}`}>
             <img
                 src={hoverIndex === index ? value.src1 : value.src}
                 onMouseEnter={() => setHoverIndex(index)}
                 onMouseLeave={() => setHoverIndex(null)}
                 alt=""
             />
+            </Link>
 
             <h3 className={style.deal_names}>{value.name}</h3>
 

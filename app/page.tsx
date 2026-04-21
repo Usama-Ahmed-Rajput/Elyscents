@@ -1,7 +1,7 @@
 import React from 'react'
 // import Header from '@/share-component/header/header'
 import Main_image from '@/share-component/components/main_image/main_image'
-import Crazy_deal from '@/share-component/components/crazy_deal/crazy_deal'
+import Crazy_deal from '@/share-component/components/crazy_deal/crazy_deals'
 import Scents_deal from '@/share-component/components/scents_image/scents_deal'
 import Best_perfume from '@/share-component/components/best_seller-perfume/best_perfume'
 import Perfect_duo from '@/share-component/components/perfect_duo_image/perfect_duo'

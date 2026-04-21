@@ -1,9 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
+// import 'swiper/css'
 import style from './perfume_for_her.module.scss'
 import Link from 'next/link'
+import {perfume_for_her} from "@/share-component/api/perfume_for_her.json"
 
 type IProductsType = {
     name: string,
@@ -20,66 +21,9 @@ const Perfume_for_her = () => {
     const [product, setProduct] = useState<IProductsType[]>([])
 
 
-    useEffect (() => {
-        
-        setProduct([{
-            name: 'Rosy Blossom',
-            cut_price: 2000,
-            real_price: 1699,
-            src: "https://elyscents.pk/cdn/shop/files/rosy_Blossom.jpg?v=1760536616&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Rosy-Blossom.jpg?v=1760536616&width=540"
-        },
-        {
-            name: "Flora Fantasy",
-            cut_price: 2000,
-            real_price: 1599,
-            src: "https://elyscents.pk/cdn/shop/files/Flora_Fantasy.jpg?v=1760523186&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Flora-Fantasy.jpg?v=1760523186&width=540"
-        },
-        {
-            name: "Berry Grace",
-            cut_price: 2000,
-            real_price: 1899,
-            src: "https://elyscents.pk/cdn/shop/files/berry_grace.jpg?v=1760522656&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Beryy-Grace.jpg?v=1760522656&width=540"
-        },
-        {
-            name: "Mystic Pulse",
-            cut_price: 2000,
-            real_price: 1599,
-            src: "https://elyscents.pk/cdn/shop/files/mystic_Pulse.jpg?v=1760523149&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Mystic-Pulse.jpg?v=1760523149&width=540"
-        },
-        {
-            name: "Rebel Bloom",
-            cut_price: 2100,
-            real_price: 1899,
-            src: "https://elyscents.pk/cdn/shop/files/rebel_bloom.jpg?v=1760522809&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Rebel-Bloom.jpg?v=1760522809&width=540"
-        },
-        {
-            name: "Floral Muse",
-            cut_price: 2000,
-            real_price: 1699,
-            src: "https://elyscents.pk/cdn/shop/files/Floral_Muse.jpg?v=1760523165&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Floral-Muse.jpg?v=1760523165&width=540"
-        },
-        {
-            name: "Empress Whif",
-            cut_price: 2000,
-            real_price: 1599,
-            src: "https://elyscents.pk/cdn/shop/files/Empress_whiff.jpg?v=1760523195&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscents-Empress-Whiff.jpg?v=1760523195&width=540"
-        },
-        {
-            name: "Velina",
-            cut_price: 2000,
-            real_price: 1899,
-            src: "https://elyscents.pk/cdn/shop/files/velina_2323b953-0e39-4cdb-899e-bd1faeb68d9d.jpg?v=1760522545&width=1080",
-            src1: "https://elyscents.pk/cdn/shop/files/Elyscent-Velina.jpg?v=1760522545&width=540"
-        }
-        ]);
-},[])
+    useEffect(()=>{
+        setProduct(perfume_for_her.slice(0,8))
+    },[])
 
     useEffect(() => {
         const handleResize = () => {
@@ -93,12 +37,14 @@ const Perfume_for_her = () => {
 
     const CartItem = (value: any, index: number) => (
     <div className={style.perfume_item} key={index}>
+        <Link href={`/product_detail/${value.slug}`}>
         <img
             src={hoverIndex === index ? value.src1 : value.src}
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
             alt=""
         />
+        </Link>
 
         <h3 className={style.deal_names}>{value.name}</h3>
 

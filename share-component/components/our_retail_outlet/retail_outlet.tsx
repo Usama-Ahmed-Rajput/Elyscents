@@ -1,6 +1,8 @@
 import React from 'react'
 import { BsShop } from "react-icons/bs";
 import style from './retail_outlets.module.scss'
+import { FaWhatsapp } from "react-icons/fa";
+import Link from 'next/link';
 const Retail_outlet = () => {
     return (
         <>
@@ -27,6 +29,7 @@ const Retail_outlet = () => {
                     <p className={style.address}>Kiosk No.: FF-01 , Phase 1, First Floor NorthWalk Mall Karachi</p>
                 </div>
             </div>
+
         </>
     )
 }

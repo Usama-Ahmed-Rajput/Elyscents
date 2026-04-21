@@ -1,9 +1,9 @@
 "use client";
 import React from 'react';
 import style from './main_image.module.scss';
-
-import { Swiper, SwiperSlide} from "swiper/react";
-import { Autoplay, Pagination} from "swiper/modules";
+import { FaWhatsapp } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,27 +18,28 @@ const images = [
 const Main_image = () => {
   return (
     <>
-    <div className={style.image_container}>
-      
-      <Swiper
-        modules={[Pagination, Autoplay
-        ]}
-        slidesPerView={1}
-        loop={true}
-        speed={400}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-      >
-        {images.map((img, index) => (
-          <SwiperSlide key={index}>
-            <img src={img} alt={`banner-${index}`} className={style.banner_img} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+      <div className={style.image_container}>
+
+    
+        <Swiper
+          modules={[Pagination, Autoplay
+          ]}
+          slidesPerView={1}
+          loop={true}
+          speed={400}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+        >
+          {images.map((img, index) => (
+            <SwiperSlide key={index}>
+              <img src={img} alt={`banner-${index}`} className={style.banner_img} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 };

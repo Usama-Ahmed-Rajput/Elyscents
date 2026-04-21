@@ -99,6 +99,10 @@ const Header = () => {
               <li>
                 <Link href="/crazy_deals">Crazy Deals</Link>
               </li>
+
+              <li>
+                <Link href="/new_year_sale">New Year Special</Link>
+              </li>
               <li>
                 <Link href="/about_us">About Us</Link>
               </li>
@@ -109,7 +113,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-
+      
       <Drawer
         anchor="left"
         open={open}
