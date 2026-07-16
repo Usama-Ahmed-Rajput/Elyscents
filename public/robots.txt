@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Allow: /product_detail/
+Allow: /search
+Allow: /login
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json
+Disallow: *?*sort=
+Disallow: *?*filter=
+Sitemap: https://alabrar.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Allow: /product_detail/
+Allow: /search
+Sitemap: https://alabrar.com/sitemap.xml
+
+User-agent: Bingbot
+Allow: /
+Allow: /product_detail/
+Allow: /search
+Sitemap: https://alabrar.com/sitemap.xml

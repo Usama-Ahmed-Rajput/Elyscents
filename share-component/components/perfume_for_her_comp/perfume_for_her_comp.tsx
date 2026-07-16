@@ -42,7 +42,7 @@ const Perfume_for_her_comp = () => {
         src={hoverIndex === index ? value.src1 : value.src}
         onMouseEnter={() => setHoverIndex(index)}
         onMouseLeave={() => setHoverIndex(null)}
-        alt=""
+        alt={`${value.name} - Al Abrar Premium Fragrance`}
       />
       </Link>
 
@@ -89,7 +89,7 @@ const Perfume_for_her_comp = () => {
       <div className={style.top_image}>
         <img
           src="https://elyscents.pk/cdn/shop/files/elyscents-banner.jpg?v=1716647770"
-          alt=""
+          alt="Al Abrar Fragrances - Premium Perfumes for Her"
         />
       </div>
 

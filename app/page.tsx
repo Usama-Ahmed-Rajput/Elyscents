@@ -16,6 +16,7 @@ const page = () => {
   return (
     <>
       {/* <Header /> */}
+      <h1 style={{ display: 'none' }}>Al Abrar Fragrances - Premium Perfumes and Scents Online</h1>
       <Main_image />
       <Crazy_deal />
       <Scents_deal />

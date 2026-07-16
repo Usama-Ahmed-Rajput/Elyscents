@@ -60,7 +60,7 @@ const Product_detail_page = () => {
           <div className={style.image_container}>
             <img
               src={foundProduct.src}
-              alt={foundProduct.name}
+              alt={`${foundProduct.name} - Al Abrar Premium Fragrance - Buy Online`}
               className={style.mn_image}
             />
           </div>
