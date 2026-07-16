@@ -24,7 +24,7 @@
 }
 
 .perfume_item {
-  width: 22%;
+  width: calc(25% - 5px);
   text-align: center;
   display: flex;
   flex-direction: column;
