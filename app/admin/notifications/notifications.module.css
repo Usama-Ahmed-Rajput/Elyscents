@@ -1,0 +1,134 @@
+.notifications_container {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.notifications_container h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.notifications_container p {
+  margin: 0 0 25px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.notifications_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notification_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.notification_item.unread {
+  background: #eff6ff;
+  border-color: #667eea;
+}
+
+.notification_item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.notification_icon {
+  font-size: 28px;
+  line-height: 1;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification_content {
+  flex: 1;
+}
+
+.message {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.timestamp {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.notification_actions {
+  display: flex;
+  gap: 8px;
+}
+
+.mark_read_btn,
+.delete_btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.mark_read_btn {
+  background: #dbeafe;
+  color: #0c4a6e;
+}
+
+.mark_read_btn:hover {
+  background: #bfdbfe;
+}
+
+.delete_btn {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.delete_btn:hover {
+  background: #fecaca;
+}
+
+.no_notifications {
+  text-align: center;
+  color: #94a3b8;
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  .notifications_container {
+    padding: 20px;
+  }
+
+  .notification_item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notification_actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .mark_read_btn,
+  .delete_btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

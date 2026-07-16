@@ -1,0 +1,84 @@
+.customers_container {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.customers_container h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.customers_container p {
+  margin: 0 0 25px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.customers_table {
+  overflow-x: auto;
+}
+
+.customers_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customers_table thead {
+  background: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.customers_table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #475569;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.customers_table tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background 0.2s;
+}
+
+.customers_table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.customers_table td {
+  padding: 15px;
+  color: #475569;
+}
+
+.view_btn {
+  padding: 6px 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.view_btn:hover {
+  background: #5568d3;
+}
+
+@media (max-width: 768px) {
+  .customers_container {
+    padding: 20px;
+  }
+
+  .customers_table th,
+  .customers_table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
