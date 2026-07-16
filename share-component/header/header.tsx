@@ -6,17 +6,20 @@ import { BsBag } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaInstagram, FaFacebook, FaYoutube, FaTiktok} from "react-icons/fa";
+import { MdDeleteOutline } from "react-icons/md";
 import { Drawer } from "@mui/material";
 import Link from "next/link";
 import style from './header.module.scss'
+import { useCart } from '../context/CartContext';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+  const { items, removeFromCart, updateQuantity, getTotalPrice } = useCart();
+
   const toggleDrawer = (value: boolean): void => {
     setOpen(value);
   };
-
-  const [cartOpen, setCartOpen] = useState(false);
 
   const toggleCartDrawer = (value: boolean): void => {
     setCartOpen(value);
@@ -27,7 +30,7 @@ const Header = () => {
   return (
     <>
       <div className={style.top_caption}>
-        Buy any two perfumes & get free shipping.
+        Al Abrar Fragrances - Buy any two perfumes & get free shipping
       </div>
 
       <nav className={style.header}>
@@ -50,8 +53,8 @@ const Header = () => {
 
             <div className={style.logo_container}>
               <Link href="/"><img
-                src="https://elyscents.pk/cdn/shop/files/logo_size.png?v=1703577106&width=320"
-                alt="Elyscents Logo"
+                src="/al-abrar-logo.png"
+                alt="Al Abrar Fragrances Logo"
                 className={style.logo}
               /></Link>
             </div>
@@ -156,10 +159,46 @@ const Header = () => {
             className={style.close_icon}
             onClick={() => toggleCartDrawer(false)}
           />
-          <h2 className={style.cart_heading}> Cart</h2>
+          <h2 className={style.cart_heading}>Shopping Cart</h2>
 
-          <p className={style.cart_text}>Your cart is currently empty.</p>
+          {items.length === 0 ? (
+            <p className={style.cart_text}>Your cart is currently empty.</p>
+          ) : (
+            <>
+              <div className={style.cart_items}>
+                {items.map((item) => (
+                  <div key={item.id} className={style.cart_item}>
+                    <img src={item.image} alt={item.name} className={style.cart_item_image} />
+                    <div className={style.cart_item_details}>
+                      <h3>{item.name}</h3>
+                      <p className={style.cart_item_price}>Rs. {item.price.toLocaleString()}</p>
+                      <div className={style.cart_item_quantity}>
+                        <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>−</button>
+                        <span>{item.quantity}</span>
+                        <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
+                      </div>
+                    </div>
+                    <button
+                      className={style.cart_item_delete}
+                      onClick={() => removeFromCart(item.id)}
+                    >
+                      <MdDeleteOutline />
+                    </button>
+                  </div>
+                ))}
+              </div>
 
+              <div className={style.cart_summary}>
+                <div className={style.cart_total}>
+                  <span>Total:</span>
+                  <span className={style.cart_total_price}>Rs. {getTotalPrice().toLocaleString()}</span>
+                </div>
+                <Link href="/checkout">
+                  <button className={style.checkout_btn}>Proceed to Checkout</button>
+                </Link>
+              </div>
+            </>
+          )}
         </div>
       </Drawer>
 

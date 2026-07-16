@@ -8,6 +8,7 @@ import { FaCircleDot, FaChevronUp } from "react-icons/fa6";
 import { FaFacebook, FaTwitter, FaPinterest } from "react-icons/fa";
 import { useParams } from "next/navigation";
 import { all_products } from "@/share-component/api/all_products.json"
+import { useCart } from "@/share-component/context/CartContext";
 
 type IProductsType = {
   name: string;
@@ -22,6 +23,9 @@ const Product_detail_page = () => {
   const [open, setOpen] = useState(false)
   const [usama, setUsama] = useState(false)
   const [foundProduct, setFoundProduct] = useState<IProductsType | null>(null)
+  const [quantity, setQuantity] = useState(1)
+  const [addedToCart, setAddedToCart] = useState(false)
+  const { addToCart } = useCart()
 
   const params = useParams();
 
@@ -168,7 +172,23 @@ const Product_detail_page = () => {
             </div>
 
             <div className={style.add_btns}>
-              <button className={style.add_to_cart_btn}>ADD TO CART</button>
+              <button
+                className={style.add_to_cart_btn}
+                onClick={() => {
+                  addToCart({
+                    id: foundProduct.slug,
+                    name: foundProduct.name,
+                    price: foundProduct.real_price,
+                    quantity: quantity,
+                    image: foundProduct.src,
+                    slug: foundProduct.slug,
+                  });
+                  setAddedToCart(true);
+                  setTimeout(() => setAddedToCart(false), 2000);
+                }}
+              >
+                {addedToCart ? '✓ ADDED TO CART' : 'ADD TO CART'}
+              </button>
               <button className={style.buy_now_btn}>BUY IT NOW</button>
             </div>
 

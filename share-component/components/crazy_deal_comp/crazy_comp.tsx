@@ -5,19 +5,22 @@ import 'swiper/css'
 import Link from 'next/link';
 import style from './crazy_comp.module.scss'
 import {crazy_products} from "@/share-component/api/crazy_deal.json";
+import { useCart } from "@/share-component/context/CartContext"
 
 type IProductsType = {
   name: string,
   cut_price: number,
   real_price: number,
   src: string,
-  src1: string
+  src1: string,
+  slug: string
 }
 
 const Crazy_comp = () => {
   const [hoverIndex, setHoverIndex] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false)
   const [product, setProduct] = useState<IProductsType[]>([])
+  const { addToCart } = useCart()
   const [sortBy, setSortBy] = useState('featured')
 
   useEffect(() => {
@@ -61,7 +64,20 @@ const Crazy_comp = () => {
       </div>
 
       <div className={style.cart_btn}>
-        <button>Add to Cart</button>
+        <button
+          onClick={() => {
+            addToCart({
+              id: value.slug,
+              name: value.name,
+              price: value.real_price,
+              quantity: 1,
+              image: value.src,
+              slug: value.slug,
+            });
+          }}
+        >
+          Add to Cart
+        </button>
       </div>
     </div>
 
