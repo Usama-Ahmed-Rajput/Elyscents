@@ -1,12 +1,9 @@
-"use client"
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/share-component/header/header";
-import Footer from "@/share-component/footer/footer";
 import { CartProvider } from "@/share-component/context/CartContext";
 import { StructuredData } from "./structured-data";
-import { usePathname } from "next/navigation";
+import { LayoutClient } from "./layout-client";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,9 +61,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname()
-  const hiddenNavbar = pathname === "/login"
-  
   return (
     <html lang="en">
       <head>
@@ -76,9 +70,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
-          {!hiddenNavbar && <Header/>}
-          {children}
-          {!hiddenNavbar && <Footer/>}
+          <LayoutClient>{children}</LayoutClient>
         </CartProvider>
       </body>
     </html>
