@@ -10,8 +10,8 @@ const Footer: FC = () => {
 
       <div className={styles.logo}>
         <img
-          src="https://elyscents.pk/cdn/shop/files/logo_size.png?v=1703577106&width=277"
-          alt="ElysCents Logo"
+          src="/al-abrar-logo.png"
+          alt="Al Abrar Fragrances Logo"
         />
       </div>
 
@@ -60,10 +60,10 @@ const Footer: FC = () => {
         <p>UAE Address: 248,0, LOOTAH BLDG 0 Diera DXB</p>
         <p>WhatsApp us: 0326-8124613</p>
         <p>Phone: 0301-2546333</p>
-        <p>Customer Support: helloelyscents@gmail.com</p>
+        <p>Customer Support: support@alabrar.com</p>
       </div>
 <div className={styles.cridit}>
-  <p>© 2026 Elyscents</p>
+  <p>© 2026 Al Abrar Fragrances</p>
   <p>Powered by Usama Ahmed</p>
 </div>
     </footer>

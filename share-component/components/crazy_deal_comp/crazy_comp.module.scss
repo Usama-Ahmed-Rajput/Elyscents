@@ -1,5 +1,5 @@
 .top_image img{
-    width: 100%;
+    width: 85%;
     height: 400px;
   margin-bottom: 50px;
   object-fit: cover;
@@ -24,7 +24,7 @@
   max-width: 1320px;
   margin: auto;
   margin-bottom: 40px;
-  width: 100%;
+    width: 85%;
   cursor: pointer;
   padding: 0 10px; 
   box-sizing: border-box;
@@ -32,7 +32,7 @@
 
 
 .perfume_item {
-  width: 22%;
+  width: calc(25% - 5px);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@
 }
 
 .perfume_item img {
-  width: 100%;
+    width: 85%;
 }
 
 .deal_names {
@@ -110,7 +110,7 @@
 
 @media(max-width:480px) {
   .perfume_item {
-    width: 100%;
+    width: 85%;
     margin-left: 15px;
   }
 }

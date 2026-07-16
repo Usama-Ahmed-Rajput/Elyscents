@@ -5,13 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import style from './best_perfume_comp.module.scss'
 import Link from 'next/link'
 import {best_products} from "@/share-component/api/best_sellers.json"
+import { useCart } from "@/share-component/context/CartContext"
 
 type IProductsType = {
     name: string,
     cut_price: number,
     real_price: number,
     src: string,
-    src1: string
+    src1: string,
+    slug: string
 }
 
 
@@ -20,6 +22,7 @@ const Best_perfume_comp = () => {
     const [isMobile, setIsMobile] = useState(false)
     const [product, setProduct] = useState<IProductsType[]>([])
     const [sortBy, setSortBy] = useState('featured')
+    const { addToCart } = useCart()
 
 useEffect(() => {
       setProduct(best_products)
@@ -60,7 +63,20 @@ useEffect(() => {
             </div>
 
             <div className={style.cart_btn}>
-                <button>Add to Cart</button>
+                <button
+                    onClick={() => {
+                        addToCart({
+                            id: value.slug,
+                            name: value.name,
+                            price: value.real_price,
+                            quantity: 1,
+                            image: value.src,
+                            slug: value.slug,
+                        });
+                    }}
+                >
+                    Add to Cart
+                </button>
             </div>
         </div>
     )
