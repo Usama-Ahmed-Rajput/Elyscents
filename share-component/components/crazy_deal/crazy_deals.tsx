@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import style from "./crazy_deal.module.scss";
 import Link from 'next/link';
 import {crazy_products} from "@/share-component/api/crazy_deal.json";
+import { useCart } from "@/share-component/context/CartContext";
 
 type IProductsType = {
   id : number,
@@ -19,6 +20,8 @@ const Crazy_deal = () => {
   const [hoverIndex, setHoverIndex] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false)
   const [product, setProduct] = useState<IProductsType[]>([])
+  const [addedItems, setAddedItems] = useState<Set<string>>(new Set())
+  const { addToCart } = useCart()
 
  useEffect(() => {
     setProduct(crazy_products)
@@ -62,7 +65,28 @@ const Crazy_deal = () => {
       </div>
 
       <div className={style.cart_btn}>
-        <button>Add to Cart</button>
+        <button
+          onClick={() => {
+            addToCart({
+              id: value.id.toString(),
+              name: value.name,
+              price: value.real_price,
+              quantity: 1,
+              image: value.src,
+              slug: value.id.toString(),
+            });
+            setAddedItems(new Set([...addedItems, value.id.toString()]));
+            setTimeout(() => {
+              setAddedItems((prev) => {
+                const newSet = new Set(prev);
+                newSet.delete(value.id.toString());
+                return newSet;
+              });
+            }, 2000);
+          }}
+        >
+          {addedItems.has(value.id.toString()) ? '✓ Added to Cart' : 'Add to Cart'}
+        </button>
       </div>
     </div>
     
