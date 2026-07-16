@@ -211,7 +211,7 @@ const New_arrivals = () => {
                 src={hoverIndex === index ? value.src1 : value.src}
                 onMouseEnter={() => setHoverIndex(index)}
                 onMouseLeave={() => setHoverIndex(null)}
-                alt=""
+                alt={`${value.name} - Al Abrar Premium Fragrance`}
             />
 
             <h3 className={style.deal_names}>{value.name}</h3>
